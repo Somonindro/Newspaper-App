@@ -33,7 +33,12 @@ public class commonweb extends AppCompatActivity {
 
         Bundle b=getIntent().getExtras();
         int x=b.getInt("key1");
-        int y=b.getInt("key2");
+        int y=b.getInt("key2");//key1 and key2 is for zillavittik
+        int p=0;
+        int q=b.getInt("key3");//eng er position
+        p=b.getInt("key4");//key3 and key4 is for english
+        //for zillavittik p will be still 0
+        int r=b.getInt("key5");//international er position
 
         progressBar = findViewById(R.id.progressBar);
         mAdView = findViewById(R.id.adView);
@@ -51,7 +56,17 @@ public class commonweb extends AppCompatActivity {
         w.setWebChromeClient(new MyChrome());
         w.setWebViewClient(new MyClient());
 
-        populating(x, y);
+        if(p==0) populating(x, y);
+        else if(p==1)
+        {
+            newspaper=getResources().getStringArray(R.array.Englishnewspaper2);
+            w.loadUrl(newspaper[q]);
+        }
+        else if(p==2)
+        {
+            newspaper=getResources().getStringArray(R.array.internationalsite);
+            w.loadUrl(newspaper[r]);
+        }
 
     }
 
