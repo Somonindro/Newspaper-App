@@ -29,6 +29,7 @@ public class commonweb extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
+        //hello
         setContentView(R.layout.activity_commonweb);
 
         Bundle b=getIntent().getExtras();
