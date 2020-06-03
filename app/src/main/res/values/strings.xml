@@ -1,0 +1,925 @@
+<resources>
+    <string name="app_name">RecyclerView</string>
+    <string-array name="district">
+        <item>Barishal</item>
+        <item>Bhola</item>
+        <item>Patuakhali</item>
+        <item>Pirojpur</item>
+        <item>Brahmanbaria</item>
+        <item>Chandpur</item>
+        <item>Chittagong</item>
+        <item>Comilla</item>
+        <item>Coxs Bazar</item>
+        <item>Feni</item>
+        <item>Khagrachari</item>
+        <item>Lakshmipur</item>
+        <item>Noakhali</item>
+        <item>Rangamati</item>
+        <item>Dhaka</item>
+        <item>Faridpur</item>
+        <item>Gazipur</item>
+        <item>Gopalganj</item>
+        <item>Kishoreganj</item>
+        <item>Madaripur</item>
+        <item>Munshiganj</item>
+        <item>Narayanganj</item>
+        <item>Narsingdi</item>
+        <item>Rajbari</item>
+        <item>Shariatpur</item>
+        <item>Tangail</item>
+        <item>Bagerhat</item>
+        <item>Chuadanga</item>
+        <item>Jessore</item>
+        <item>Jhenaidah</item>
+        <item>Khulna</item>
+        <item>Kushtia</item>
+        <item>Magura</item>
+        <item>Meherpur</item>
+        <item>Narail</item>
+        <item>Sathkhira</item>
+        <item>Jamalpur</item>
+        <item>Mymensingh</item>
+        <item>Netrokona</item>
+        <item>Sherpur</item>
+        <item>Bogura</item>
+        <item>Jaypurhat</item>
+        <item>Naogaon</item>
+        <item>Natore</item>
+        <item>Chapainawabganj</item>
+        <item>Pabna</item>
+        <item>Rajshahi</item>
+        <item>Sirajganj</item>
+        <item>Dinajpur</item>
+        <item>Gaibandha</item>
+        <item>Kurigram</item>
+        <item>Lalmonirhat</item>
+        <item>Nilfamari</item>
+        <item>Panchagarh</item>
+        <item>Rangpur</item>
+        <item>Thakurgaon</item>
+        <item>Hobiganj</item>
+        <item>Moulvibazar</item>
+        <item>Sunamganj</item>
+        <item>Sylhet</item>
+    </string-array>
+
+    <string-array name="Barishal1">
+        <item>Amader Barishal</item>
+        <item>Barishal News</item>
+        <item>Barishal Times</item>
+        <item>Barishal Today</item>
+        <item>Barishal Barta</item>
+        <item>Barishal Crime News</item>
+    </string-array>
+    <string-array name="Barishal2">
+        <item>http://www.amaderbarisal.com/</item>
+        <item>https://barishalnews.com/</item>
+        <item>https://www.barishaltimes.com/</item>
+        <item>http://barisaltoday.com/</item>
+        <item>https://barishalbarta.com/</item>
+        <item>https://barishalcrimenews.com/</item>
+    </string-array>
+
+    <string-array name="Bhola1">
+        <item>Bhola News</item>
+        <item>Doinik Ajker Vola</item>
+    </string-array>
+    <string-array name="Bhola2">
+        <item>https://www.bholanews.com/</item>
+        <item>http://www.ajkerbhola.com/</item>
+    </string-array>
+
+    <string-array name="Patuakhali1">
+        <item>Doinik Patuakhali</item>
+    </string-array>
+    <string-array name="Patuakhali2">
+        <item>https://doinikpatuakhali.com/</item>
+    </string-array>
+
+    <string-array name="Pirojpur1">
+        <item>Pirojpur Times</item>
+    </string-array>
+    <string-array name="Pirojpur2">
+        <item>http://pirojpurtimes24.com/</item>
+    </string-array>
+
+    <string-array name="Brammonbaria1">
+        <item>Amader Brammonbaria</item>
+        <item>Brahmanbaria24</item>
+    </string-array>
+    <string-array name="Brammonbaria2">
+        <item>https://amaderbrahmanbaria.xyz/</item>
+        <item>http://brahmanbaria24.com/</item>
+    </string-array>
+
+    <string-array name="Chandpur1">
+        <item>Chandpurweb</item>
+        <item>Chandpur Times</item>
+        <item>Chandpur News</item>
+        <item>Doinik Chandpur khobor</item>
+        <item>Doinik Chandpur Darpan</item>
+    </string-array>
+    <string-array name="Chandpur2">
+        <item>http://www.chandpurweb.com/</item>
+        <item>https://chandpurtimes.com/</item>
+        <item>https://chandpurnews.com/</item>
+        <item>https://www.chandpurkhabar.com/</item>
+        <item>https://chandpurdarpan.com/</item>
+    </string-array>
+
+    <string-array name="Chittagong1">
+        <item>Doinik Azadi</item>
+        <item>Doinik Purbokone</item>
+        <item>Ctg times</item>
+        <item>Chottogram news</item>
+        <item>Suprovath</item>
+        <item>Doinik Purbodesh</item>
+        <item>Parbatta News</item>
+        <item>Chtimes</item>
+        <item>Pahar24</item>
+        <item>Rauzan News</item>
+        <item>Chakria News</item>
+        <item>Teknafnews</item>
+        <item>Chittagong daily</item>
+    </string-array>
+    <string-array name="Chittagong2">
+        <item>https://dainikazadi.net/</item>
+        <item>http://dainikpurbokone.net/</item>
+        <item>https://ctgtimes.com/</item>
+        <item>http://chattogramnews.com/</item>
+        <item>http://suprobhat.com/</item>
+        <item>http://dailypurbodesh.com/</item>
+        <item>https://www.parbattanews.com/</item>
+        <item>http://www.chttimes24.com/</item>
+        <item>https://www.pahar24.com/</item>
+        <item>https://raozannews.com.bd/</item>
+        <item>http://chakarianews.com/</item>
+        <item>http://www.teknafnews.com/</item>
+        <item>http://chittagongdaily.com/</item>
+    </string-array>
+
+    <string-array name="Comilla1">
+        <item>Amader Comilla</item>
+        <item>Comillar kagoj</item>
+        <item>Comillar Barta</item>
+        <item>Comillar khobor</item>
+        <item>Dailycomillanews</item>
+    </string-array>
+    <string-array name="Comilla2">
+        <item>http://amadercomillaa.com/beta/</item>
+        <item>http://www.comillarkagoj.com/</item>
+        <item>http://comillarbarta.com/</item>
+        <item>http://www.comillarkhabor.com/</item>
+        <item>http://dailycomillanews.com/</item>
+    </string-array>
+
+    <string-array name="Coxsbazar1">
+        <item>Coxsbazar news</item>
+        <item>Coxs bangla</item>
+        <item>Doinik Coxsbazar</item>
+    </string-array>
+    <string-array name="Coxsbazar2">
+        <item>http://www.coxsbazarnews.com/</item>
+        <item>https://coxbangla.com/</item>
+        <item>http://www.dainikcoxsbazar.com/index.php</item>
+    </string-array>
+
+    <string-array name="Feni1">
+        <item>Prothom Feni</item>
+        <item>Feni News</item>
+        <item>Feni Online</item>
+    </string-array>
+    <string-array name="Feni2">
+        <item>http://prothom-feni.com/</item>
+        <item>http://www.feninews.com/</item>
+        <item>http://fenionline.net/</item>
+    </string-array>
+
+    <string-array name="Khagrachori1">
+        <item>Khagrachari news</item>
+        <item>News of Khagrachari</item>
+        <item>Doinik Khagrachari</item>
+    </string-array>
+    <string-array name="Khagrachori2">
+        <item>http://www.khagracharinews.com/</item>
+        <item>http://newsofkhagrachari.com/</item>
+        <item>https://www.dainikkhagrachari.com/</item>
+    </string-array>
+
+    <string-array name="Lakshmipur1">
+        <item>Lakshmipur24</item>
+        <item>Lakshmipur Times</item>
+        <item>Lakshmipurbarta</item>
+        <item>Lakshmipur News</item>
+        <item>Laxmipurnews</item>
+        <item>Shersha Songbadh</item>
+    </string-array>
+    <string-array name="Lakshmipur2">
+        <item>https://www.lakshmipur24.com/</item>
+        <item>http://www.lakshmipurtimes.com/</item>
+        <item>http://lakshmipurbarta.net.bd/</item>
+        <item>https://www.lakshmipurnews.com/?m=1</item>
+        <item>http://laxmipurnews.com/</item>
+        <item>http://www.sheershasangbad.com/</item>
+    </string-array>
+
+    <string-array name="Noakhali1">
+        <item>Choloman Noakhali</item>
+        <item>Loksongbadh</item>
+        <item>Noakhali Protidin</item>
+        <item>Doinik Jatiyo Nishan</item>
+    </string-array>
+    <string-array name="Noakhali2">
+        <item>http://www.chalomannoakhali.com/</item>
+        <item>https://www.loksangbad.com/?m=0</item>
+        <item>http://noakhalipratidin.com.bd/</item>
+        <item>https://jatiyanishan.com/</item>
+    </string-array>
+
+    <string-array name="Rangamati1">
+        <item>Chttoday</item>
+        <item>Daily Rangamati</item>
+    </string-array>
+    <string-array name="Rangamati2">
+        <item>https://chttoday.com/</item>
+        <item>http://dailyrangamati.com/</item>
+    </string-array>
+
+    <string-array name="Dhaka1">
+        <item>Dhaka Tribune</item>
+        <item>Dhaka Times</item>
+        <item>Dhaka News24</item>
+        <item>Dhaka Today</item>
+    </string-array>
+    <string-array name="Dhaka2">
+        <item>https://www.dhakatribune.com/mobile</item>
+        <item>https://www.dhakatimes24.com/</item>
+        <item>http://dhakanews24.com/</item>
+        <item>https://www.dhakatoday.com/</item>
+    </string-array>
+
+    <string-array name="Faridpur1">
+        <item>Faridpur Times</item>
+        <item>Doinik Faridpurkontho</item>
+    </string-array>
+    <string-array name="Faridpur2">
+        <item>https://faridpurtimes.com/</item>
+        <item>https://dailyfaridpurkantho.com/</item>
+    </string-array>
+
+    <string-array name="Gazipur1">
+        <item>Gazipur News24</item>
+        <item>Daily Gazipur</item>
+    </string-array>
+    <string-array name="Gazipur2">
+        <item>https://gazipurnews24.com/</item>
+        <item>https://www.dailygazipuronline.com/</item>
+    </string-array>
+
+    <string-array name="Gopalganj1">
+        <item>Doinik Bortoman Gopalganj</item>
+    </string-array>
+    <string-array name="Gopalganj2">
+        <item>http://dailygopalganj.com/</item>
+    </string-array>
+
+    <string-array name="Kishorganj1">
+        <item>Doinik Kishoreganj</item>
+        <item>Kishorganjnews</item>
+    </string-array>
+    <string-array name="Kishorganj2">
+        <item>https://www.dainikkishoreganj.com/</item>
+        <item>https://kishoreganjnews.com/</item>
+    </string-array>
+
+    <string-array name="Madaripur1">
+        <item>Rajoirnews</item>
+    </string-array>
+    <string-array name="Madaripur2">
+        <item>http://www.rajoirnews.com/</item>
+    </string-array>
+
+    <string-array name="Munshiganj1">
+        <item>Munshiganjer kagoj</item>
+        <item>Munshiganj News</item>
+        <item>Munshiganj News24</item>
+        <item>Amar Bikrompur</item>
+    </string-array>
+    <string-array name="Munshiganj2">
+        <item>https://www.munshigonjerkagoj.com/</item>
+        <item>http://www.munshiganjnews.com/</item>
+        <item>https://www.munshiganjnews24.net/</item>
+        <item>http://amarbikrampur.com/</item>
+    </string-array>
+
+    <string-array name="Naraynganj1">
+        <item>Live Naraynganj</item>
+        <item>Dandibarta</item>
+        <item>Naraynganj Barta24</item>
+        <item>Naraynganj24</item>
+    </string-array>
+    <string-array name="Naraynganj2">
+        <item>https://www.livenarayanganj.com/</item>
+        <item>https://dundeebarta.com/site/</item>
+        <item>https://narayanganjbarta24.com/</item>
+        <item>http://narayanganj24.com/</item>
+    </string-array>
+
+    <string-array name="Narsinghdi1">
+        <item>Narsingdi Times</item>
+    </string-array>
+    <string-array name="Narsinghdi2">
+        <item>https://narsingditimes.com/</item>
+    </string-array>
+
+    <string-array name="Rajbari1">
+        <item>Rajbari News24</item>
+        <item>Doinik Matrikontho</item>
+        <item>Rajbari Kantha</item>
+    </string-array>
+    <string-array name="Rajbari2">
+        <item>https://rajbarinews24.com/</item>
+        <item>http://dailymatrikantha.com/</item>
+        <item>https://dailyrajbarikantha.com/</item>
+    </string-array>
+
+    <string-array name="Shariatpur1">
+        <item>Shariatpur News24</item>
+        <item>Shariatpur Barta</item>
+        <item>Doinik Rudrobarta</item>
+    </string-array>
+    <string-array name="Shariatpur2">
+        <item>https://shariatpurnews24.com/</item>
+        <item>https://www.shariatpurbarta.com/</item>
+        <item>https://rudrabarta.net/</item>
+    </string-array>
+
+    <string-array name="Tangail1">
+        <item>Tangail Times24</item>
+        <item>Ghatail</item>
+    </string-array>
+    <string-array name="Tangail2">
+        <item>http://www.tangailtimes24.com/</item>
+        <item>https://ghatail.com/</item>
+    </string-array>
+
+    <string-array name="Bagerhat1">
+        <item>Bagerhat24</item>
+        <item>Bagerhat info</item>
+    </string-array>
+    <string-array name="Bagerhat2">
+        <item>http://www.bagerhat24.com/</item>
+        <item>https://www.google.com/amp/www.bagerhatinfo.com/%3famp</item>
+    </string-array>
+
+    <string-array name="Chuadanga1">
+        <item>Doinik Mathavanga</item>
+        <item>Somoyer Somikoron</item>
+    </string-array>
+    <string-array name="Chuadanga2">
+        <item>https://www.google.com/amp/s/www.mathabhanga.com/amp/</item>
+        <item>http://dailysomoyersomikoron.com/</item>
+    </string-array>
+
+    <string-array name="Jessore1">
+        <item>Gramer kagoj</item>
+        <item>Doinik Spondon</item>
+        <item>Jessore News24</item>
+        <item>One news BD</item>
+    </string-array>
+    <string-array name="Jessore2">
+        <item>https://gramerkagoj.com/</item>
+        <item>https://dailyspandan.com/</item>
+        <item>http://www.jessorenews24.com/?m=1</item>
+        <item>https://www.onenewsbd.com/</item>
+    </string-array>
+
+    <string-array name="Jhenaidah1">
+        <item>Jhenaidaher chokh</item>
+    </string-array>
+    <string-array name="Jhenaidah2">
+        <item>http://www.jhc24.com/</item>
+    </string-array>
+
+    <string-array name="Khulna1">
+        <item>Khulnanews</item>
+        <item>Doinik Purbanchol</item>
+        <item>Doinik Khulnanchal</item>
+        <item>Doinik Probaho</item>
+    </string-array>
+    <string-array name="Khulna2">
+        <item>http://khulnanews.com/</item>
+        <item>https://epaper.purbanchal.com/</item>
+        <item>https://khulnanchal.com/</item>
+        <item>https://www.dailyprobaha.com.bd/</item>
+    </string-array>
+
+    <string-array name="Kustia1">
+        <item>Andoloner Bazar</item>
+        <item>Kustia24</item>
+        <item>The kustia times</item>
+        <item>Doinik Bangladesh barta</item>
+    </string-array>
+    <string-array name="Kustia2">
+        <item>https://www.dailyandolonerbazar.com/</item>
+        <item>https://www.google.com/amp/s/kushtia24.news/%3famp</item>
+        <item>http://www.thekushtiatimes.com/</item>
+        <item>https://www.dailybangladeshbarta.com/</item>
+    </string-array>
+
+    <string-array name="Magura1">
+        <item>Magura News</item>
+        <item>Magurabarta24</item>
+        <item>Magura Protidin</item>
+    </string-array>
+    <string-array name="Magura2">
+        <item>https://www.maguranews.com/</item>
+        <item>http://magurabarta24.com/</item>
+        <item>http://beta.maguraprotidin.com/</item>
+    </string-array>
+
+    <string-array name="Meherpur1">
+        <item>Meherpur News</item>
+        <item>Meherpur Protidin</item>
+    </string-array>
+    <string-array name="Meherpur2">
+        <item>https://www.meherpurnews.com/</item>
+        <item>https://www.meherpurpratidin.com/</item>
+    </string-array>
+
+    <string-array name="Narail1">
+        <item>Narail Kontho</item>
+    </string-array>
+    <string-array name="Narail2">
+        <item>http://www.narailkantho.com/</item>
+    </string-array>
+
+    <string-array name="Sathkhira1">
+        <item>Sathkhira News</item>
+        <item>Doinik Potrodut</item>
+        <item>Sathkhira News24</item>
+        <item>Doinik Sathkhira</item>
+        <item>Sathkhira today</item>
+        <item>Doinik Dristipat</item>
+        <item>Daily Sathkhira</item>
+    </string-array>
+    <string-array name="Sathkhira2">
+        <item>https://www.satkhiranews.com/</item>
+        <item>https://patradoot.net/</item>
+        <item>https://satkhiranews24.com/</item>
+        <item>http://dainiksatkhira.com/</item>
+        <item>https://satkhiratoday.com/</item>
+        <item>https://www.dainikdristipat.com/</item>
+        <item>https://dailysatkhira.com/</item>
+    </string-array>
+
+    <string-array name="Jamalpur1">
+        <item>Ajker Jamalpur</item>
+        <item>Doinik Jamalpur</item>
+    </string-array>
+    <string-array name="Jamalpur2">
+        <item>http://www.ajkerjamalpur.com//</item>
+        <item>https://www.dainikjamalpur.com/</item>
+    </string-array>
+
+    <string-array name="Mymensingh1">
+        <item>Mymensingh protidin</item>
+        <item>Alokito Mymensingh24</item>
+        <item>Ajker Mymensingh</item>
+        <item>Loklokantor</item>
+        <item>Doinik Momenshahi</item>
+        <item>Trishal Protidin</item>
+        <item>Valuka News</item>
+    </string-array>
+    <string-array name="Mymensingh2">
+        <item>http://www.mymensinghpratidin.com/</item>
+        <item>http://www.alokitomymensingh24.com/</item>
+        <item>https://www.ajkermymensingh.com/</item>
+        <item>https://www.loklokantor.com/</item>
+        <item>http://www.dailymomenshahi.com/</item>
+        <item>https://trishalprotidin.com/</item>
+        <item>http://bhalukanews.com/</item>
+    </string-array>
+
+    <string-array name="Netrokona1">
+        <item>Durjoy Bangla</item>
+    </string-array>
+    <string-array name="Netrokona2">
+        <item>https://www.durjoybangla.com/</item>
+    </string-array>
+
+    <string-array name="Sherpur1">
+        <item>Sherpur Times</item>
+        <item>Shamol Bangla</item>
+        <item>Sherpur News24</item>
+        <item>Sherpur Today</item>
+        <item>Sherpurer alo</item>
+    </string-array>
+    <string-array name="Sherpur2">
+        <item>https://sherpurtimes.com/</item>
+        <item>https://shamolbangla24.com/</item>
+        <item>https://sherpurnews24.com/</item>
+        <item>https://sherpurtoday.com/</item>
+        <item>https://sherpureralo.com/</item>
+    </string-array>
+
+    <string-array name="Bogura1">
+        <item>Doinik korotoa</item>
+        <item>Bogura sangbad</item>
+        <item>Doinik Chadnibazar</item>
+        <item>Provater alo</item>
+        <item>Doinik Bogura</item>
+        <item>Doinik aj o agamikal</item>
+        <item>Doinik muktosokal</item>
+        <item>Doinik Kalerkhobor</item>
+        <item>Daily Bangladesh</item>
+    </string-array>
+    <string-array name="Bogura2">
+        <item>https://www.dailykaratoa.com/</item>
+        <item>https://www.bograsangbad.com/</item>
+        <item>https://dailychandnibazar.com.bd/</item>
+        <item>http://www.provateralo.com/</item>
+        <item>https://www.dainikbogura.com/</item>
+        <item>http://aajoagamikal.blogspot.com/?m=0</item>
+        <item>https://dailymuktoshokal.com/</item>
+        <item>http://dainikkalerkhobor.com/</item>
+        <item>https://m.daily-bangladesh.com/</item>
+    </string-array>
+
+    <string-array name="Jaypurhat1">
+        <item>Barendrabarta</item>
+    </string-array>
+    <string-array name="Jaypurhat2">
+        <item>https://www.varendrabarta.com/</item>
+    </string-array>
+
+    <string-array name="Naogaon1">
+        <item>Naogaon Dorpon</item>
+        <item>Doinik Gonokontho</item>
+    </string-array>
+    <string-array name="Naogaon2">
+        <item>https://www.naogaondorpon.com/</item>
+        <item>https://www.gonokantho.com/cat.php?cd=183</item>
+    </string-array>
+
+    <string-array name="Natore1">
+        <item>Ajker Natore</item>
+        <item>Jagonatore24</item>
+        <item>Natorebarta</item>
+    </string-array>
+    <string-array name="Natore2">
+        <item>https://www.ajkernatore.com/</item>
+        <item>https://www.jagonatore24.com/</item>
+        <item>https://natorebarta.com/</item>
+    </string-array>
+
+    <string-array name="Chapainawabganj1">
+        <item>Chapainawabganj News</item>
+    </string-array>
+    <string-array name="Chapainawabganj2">
+        <item>http://www.chapainawabganjnews.com/?m=1</item>
+    </string-array>
+
+    <string-array name="Pabna1">
+        <item>News Pabna</item>
+        <item>Pabnabarta24</item>
+        <item>Pabna Protidin</item>
+    </string-array>
+    <string-array name="Pabna2">
+        <item>https://newspabna.com/</item>
+        <item>https://www.pabnabarta24.com/?m=1</item>
+        <item>https://pabnaprotidin.com/</item>
+    </string-array>
+
+    <string-array name="Rajshshi1">
+        <item>Rajshahirsomoy</item>
+        <item>Rajshahi News 24</item>
+        <item>Sonali Songbad</item>
+        <item>Padma News</item>
+        <item>Doinik Sunshine</item>
+        <item>Songbad Konika</item>
+        <item>Rajshahi Express</item>
+        <item>Uttorbongo Protidin</item>
+    </string-array>
+    <string-array name="Rajshshi2">
+        <item>https://www.rajshahirsomoy.com/</item>
+        <item>https://rajshahinews24.com/</item>
+        <item>https://sonalisangbad.com/</item>
+        <item>https://padmanews24.com/</item>
+        <item>https://www.dailysunshine.com.bd/</item>
+        <item>https://www.sangbadkonika.com/</item>
+        <item>https://www.rajshahiexpress.com/</item>
+        <item>http://24x7upnews.com/</item>
+    </string-array>
+
+    <string-array name="Sirajganj1">
+        <item>Sirajganj News24</item>
+        <item>Sirajganj Kontho</item>
+    </string-array>
+    <string-array name="Sirajganj2">
+        <item>http://sirajganjnews24.com/</item>
+        <item>https://sirajganjkantho.news/</item>
+    </string-array>
+
+    <string-array name="Dinajpur1">
+        <item>Dinajpur News</item>
+        <item> Dinajpur News24</item>
+    </string-array>
+    <string-array name="Dinajpur2">
+        <item>https://dinajpurnews.com/</item>
+        <item>http://www.dinajpurnews24.com/</item>
+    </string-array>
+
+    <string-array name="Gaibandha1">
+        <item>Doinik Gaibandha</item>
+    </string-array>
+    <string-array name="Gaibandha2">
+        <item>https://www.dainikgaibandha.com/</item>
+    </string-array>
+
+    <string-array name="Kurigram1">
+        <item>Kurigram barta</item>
+        <item>Kurigram live</item>
+    </string-array>
+    <string-array name="Kurigram2">
+        <item>https://www.kurigrambarta.com/</item>
+        <item>https://www.kurigramlive.com/</item>
+    </string-array>
+
+    <string-array name="Lalmonirhat1">
+        <item>Lalmonirhat barta</item>
+        <item>Lalmoni protidin</item>
+    </string-array>
+    <string-array name="Lalmonirhat2">
+        <item>https://www.lalmonirhatbarta.com/</item>
+        <item>https://www.lalmonipratidin.com/</item>
+    </string-array>
+
+    <string-array name="Nilphamari1">
+        <item>Nilphamari News</item>
+        <item>Nilphamari Barta</item>
+    </string-array>
+    <string-array name="Nilphamari2">
+        <item>https://www.nilphamarinews24.com/</item>
+        <item>https://www.nilphamaribarta.com/</item>
+    </string-array>
+
+    <string-array name="Panchagar1">
+        <item>Doinik Panchagar</item>
+        <item>Panchagarh News</item>
+    </string-array>
+    <string-array name="Panchagar2">
+        <item>https://www.dainikpanchagarh.com/</item>
+        <item>https://panchagarhnews.com/</item>
+    </string-array>
+
+    <string-array name="Rangpur1">
+        <item>Rangpur times</item>
+        <item>Rangpurlive</item>
+        <item>Dainik Rangpur</item>
+        <item>Chilahatiweb</item>
+        <item>bdtnews24</item>
+        <item>Uttorbangla</item>
+    </string-array>
+    <string-array name="Rangpur2">
+        <item>https://rangpurtimes.com/</item>
+        <item>https://www.rangpurlive.news/</item>
+        <item>https://www.dainikrangpur.com/</item>
+        <item>http://www.chilahatiweb.com/?m=1</item>
+        <item>https://bdtnews24.com/</item>
+        <item>https://www.uttorbangla.com/</item>
+    </string-array>
+
+    <string-array name="Thakurgaon1">
+        <item>Thakurgaonbarta</item>
+        <item>Doinik Thakurgaon</item>
+    </string-array>
+    <string-array name="Thakurgaon2">
+        <item>https://thakurgaonbarta.xyz/</item>
+        <item>https://www.dainikthakurgaon.com/</item>
+    </string-array>
+
+    <string-array name="Hobiganj1">
+        <item>Doinik Hobiganj Somachar</item>
+        <item>Doinik Khowai</item>
+        <item>Hobiganj Express</item>
+        <item>Doinik Hobiganjer Mukh</item>
+        <item>Doinik Habiganj Somoy</item>
+    </string-array>
+    <string-array name="Hobiganj2">
+        <item>http://www.habiganj-samachar.com/</item>
+        <item>http://www.dailykhowai.com/</item>
+        <item>http://www.habiganjexpress.com/</item>
+        <item>https://dailyhabiganjermukh.com/</item>
+        <item>https://www.dailyhabiganjshomoy.com/</item>
+    </string-array>
+
+    <string-array name="Moulovibazar1">
+        <item>Doinik Moulovibazar</item>
+        <item>Moulvibazar24</item>
+    </string-array>
+    <string-array name="Moulovibazar2">
+        <item>http://dainikmoulvibazar.com/</item>
+        <item>https://www.moulvibazar24.com/</item>
+    </string-array>
+
+    <string-array name="Sunamganj1">
+        <item>Sunamganjer Khobor</item>
+        <item>Sunamganj Barta</item>
+        <item>Sunamganj News71</item>
+        <item>Doinik Ajker Sunamganj</item>
+    </string-array>
+    <string-array name="Sunamganj2">
+        <item>https://sunamganjerkhobor.com/</item>
+        <item>https://sunamganjbarta.com/</item>
+        <item>https://sunamganjnews71.com/</item>
+        <item>https://dailyajkersunamganj.com/</item>
+    </string-array>
+
+    <string-array name="Sylhet1">
+        <item>Sylhetview</item>
+        <item>Daily Sylhet</item>
+        <item>Sylheter Sokal</item>
+        <item>Sylheter dak</item>
+        <item>Doinik Sylhet</item>
+        <item>Shersha Khobor</item>
+        <item>Sylhet Express</item>
+        <item>Doinik Kazirbazar</item>
+        <item>Amader Sylhet</item>
+        <item>Surma Times</item>
+        <item>Doinik Sabujsylhet</item>
+        <item>Dream Sylhet</item>
+        <item>Eurobanglanews24</item>
+        <item>Beaninazarnews24</item>
+        <item>Sylhet News Times</item>
+        <item>Sylhet News24</item>
+        <item>Sylhet Report</item>
+        <item>Kulaura Songbad</item>
+        <item>Amar sylhet24</item>
+        <item>Zakiganjbarta24</item>
+        <item>Uttorpurbo</item>
+        <item>Crimesylhet</item>
+        <item>Global Sylhet</item>
+        <item>Ajker Kagoj24</item>
+        <item>Provatbela</item>
+        <item>Sonar Sylhet</item>
+    </string-array>
+    <string-array name="Sylhet2">
+        <item>http://www.sylhetview24.net/</item>
+        <item>https://dailysylhet.com/</item>
+        <item>http://sylhetersokal.com/</item>
+        <item>http://sylheterdak.com.bd/</item>
+        <item>http://dainiksylhet.com/</item>
+        <item>http://www.sheershakhobor.com/</item>
+        <item>http://www.sylhetexpress.com/</item>
+        <item>http://kazirbazar.com/</item>
+        <item>http://www.amadersylhet.com/</item>
+        <item>https://www.surmatimes.com/</item>
+        <item>http://sabujsylhet.com/</item>
+        <item>https://dreamsylhet.com/</item>
+        <item>http://www.eurobanglanews24.com/</item>
+        <item>https://beanibazarnews24.com/</item>
+        <item>https://sylhetnewstimes.com/</item>
+        <item>http://www.sylhetnews24.com/</item>
+        <item>http://sylhetreport.com/</item>
+        <item>http://kulaurasongbad.com/</item>
+        <item>http://www.amarsylhet24.com/</item>
+        <item>http://zakiganjbarta24.com/</item>
+        <item>http://euttorpurbo.com/</item>
+        <item>https://www.crimesylhet.com/</item>
+        <item>http://www.globalsylhet.com/</item>
+        <item>https://ajkerkagoj24.net/amp/</item>
+        <item>http://www.dailyprovatbela.com/</item>
+        <item>http://sonarsylhet.com/</item>
+    </string-array>
+
+    <string-array name="Englishnewspaper1">
+        <item>The Daily Star</item>
+        <item>Banglanews24</item>
+        <item>Bangladesh Post</item>
+        <item>Bdnews24</item>
+        <item>The Asian Age</item>
+        <item>Daily Prothom Alo</item>
+        <item>Daily Sun</item>
+        <item>Dhaka Tribune</item>
+        <item>Energy Bangla</item>
+        <item>New Age</item>
+        <item>Ntv online</item>
+        <item>Bangladesh Monitor</item>
+        <item>Bangladesh Today</item>
+        <item>Daily Observer</item>
+        <item>Finantial Express</item>
+        <item>The Good Morning</item>
+        <item>The Independent</item>
+        <item>The New Nation</item>
+        <item>The News Today</item>
+        <item>UNB</item>
+        <item>Amar Desh</item>
+        <item>The Business Standard</item>
+    </string-array>
+
+    <string-array name="Englishnewspaper2">
+        <item>https://www.thedailystar.net/</item>
+        <item>https://www.banglanews24.com/english</item>
+        <item>https://bangladeshpost.net/</item>
+        <item>https://m.bdnews24.com/</item>
+        <item>https://www.dailyasianage.com/</item>
+        <item>https://en.prothomalo.com/</item>
+        <item>https://www.daily-sun.com/</item>
+        <item>https://www.dhakatribune.com/mobile</item>
+        <item>http://energybangla.com/</item>
+        <item>http://www.newagebd.net/</item>
+        <item>https://en.ntvbd.com/</item>
+        <item>https://www.bangladeshmonitor.com.bd/</item>
+        <item>https://thebangladeshtoday.com/</item>
+        <item>https://www.observerbd.com/</item>
+        <item>https://thefinancialexpress.com.bd/</item>
+        <item>http://www.thegoodmorning.net/</item>
+        <item>http://m.theindependentbd.com//</item>
+        <item>http://m.thedailynewnation.com/</item>
+        <item>http://www.newstoday.com.bd/</item>
+        <item>https://unb.com.bd/mobile</item>
+        <item>https://amar-desh24.com/</item>
+        <item>https://tbsnews.net/</item>
+    </string-array>
+
+    <string-array name="jobsite">
+        <item>https://www.bdjobs.com/</item>
+        <item>https://www.chakri.com/</item>
+        <item>http://www.nayadigantajobs.com/</item>
+        <item>http://www.jobsinbd.com/</item>
+        <item>http://jobsa1.com/</item>
+        <item>http://job.com.bd/</item>
+        <item>http://m.bdjobstoday.com/</item>
+        <item>https://www.jobsite.co.uk/</item>
+        <item>https://chakrirkhobor.com.bd/</item>
+        <item>https://www.alljobsbd.com/</item>
+        <item>https://bd-career.com/</item>
+        <item>http://www.bdhoteljobs.com/</item>
+    </string-array>
+
+    <string-array name="educationalsite">
+        <item>http://www.educationboardresults.gov.bd/</item>
+        <item>http://www.educationbangla.com/</item>
+        <item>https://www.10minuteschool.com/</item>
+        <item>https://www.teachers.gov.bd/</item>
+        <item>https://eshikhon.com/</item>
+        <item>https://studypress.org/</item>
+        <item>https://www.educarnival.com/</item>
+        <item>http://shikkhok.com/</item>
+        <item>http://www.edpdbd.org/</item>
+        <item>http://banglabookspdf.blogspot.com/?m=1</item>
+        <item>https://amarpathshala.com/</item>
+        <item>https://lekhaporabd.com/</item>
+        <item>http://m.dainikshiksha.com/</item>
+    </string-array>
+
+    <string-array name="internationalsite">
+        <item>https://www.bbc.com/</item>
+        <item>https://edition.cnn.com/</item>
+        <item>http://www.bssnews.net/</item>
+        <item>https://abcnews.go.com/</item>
+        <item>http://www.unbnews.org/</item>
+        <item>https://www.nytimes.com/</item>
+        <item>https://www.usatoday.com/</item>
+        <item>https://www.indiatimes.com/</item>
+        <item>https://www.foxnews.com/</item>
+        <item>https://www.washingtonpost.com/</item>
+        <item>https://m.hindustantimes.com/</item>
+        <item>https://www.theguardian.com/</item>
+        <item>https://www.ndtv.com/</item>
+        <item>http://www.asiantribune.com/</item>
+        <item>https://mobile.reuters.com/</item>
+        <item>https://www.aljazeera.com/</item>
+        <item>https://www.ap.org/en-gb/</item>
+        <item>https://www.lyrarc.com/</item>
+        <item>https://www.afp.com/</item>
+        <item>https://www.themoscowtimes.com/</item>
+        <item>https://www.euronews.com/</item>
+        <item>https://news.sky.com/</item>
+    </string-array>
+
+    <string-array name="tvchannel">
+        <item>https://www.channelionline.com/</item>
+        <item>http://independent24.com/</item>
+        <item>https://m.somoynews.tv/</item>
+        <item>https://www.ntvbd.com/</item>
+        <item>http://www.channel24bd.tv/</item>
+        <item>https://m.rtvonline.com/</item>
+        <item>https://www.ekushey-tv.com/</item>
+        <item>https://www.atnbangla.tv/</item>
+        <item>http://jamuna.tv/</item>
+        <item>https://www.satv.tv/</item>
+        <item>https://desh.tv/</item>
+        <item>http://maasranga.tv/</item>
+        <item>https://banglavision.tv/</item>
+        <item>http://www.channelninebd.tv/channel9/home.php</item>
+        <item>http://mytvbd.tv/</item>
+        <item>http://boishakhionline.com/</item>
+        <item>http://www.mohona.tv/</item>
+        <item>http://gazitv.com/</item>
+        <item>http://btv.gov.bd/</item>
+        <item>http://channel-16tv.com/</item>
+    </string-array>
+
+</resources>

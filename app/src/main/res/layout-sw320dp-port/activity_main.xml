@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#404E5A"
+    tools:context=".MainActivity"
+    android:padding="10dp">
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:weightSum="2"
+                >
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:id="@+id/zilaVittik"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/zilavittik"
+                    />
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:id="@+id/jatiyo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/jatiyo"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:weightSum="2"
+                >
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:id="@+id/english"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/english"
+                    />
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:id="@+id/international"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/international"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:weightSum="2"
+                >
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:id="@+id/khela"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/khela"
+                    />
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:id="@+id/chakri"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/chakri"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:weightSum="2"
+                >
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:id="@+id/sikkha"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sikkha"
+                    />
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:id="@+id/binodon"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/binodon"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="49.5dp"
+                android:background="#707070"
+                android:layout_marginBottom="29.5dp"
+                />
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="লাইভ টিভিঃ"
+                android:textStyle="bold"
+                android:textColor="#A6BCD0"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:layout_marginBottom="59dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:weightSum="2"
+                >
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:id="@+id/liveTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/live_news"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="49.5dp"
+                android:background="#707070"
+                android:layout_marginBottom="29.5dp"
+                />
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="রেডিওঃ"
+                android:textStyle="bold"
+                android:textColor="#A6BCD0"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:layout_marginBottom="59dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:weightSum="2"
+                >
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:id="@+id/liveRadio"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/live_radio"
+                    />
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:id="@+id/islamic"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/islamic_radio"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
