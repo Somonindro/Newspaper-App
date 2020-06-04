@@ -1,30 +1,24 @@
 package com.example.recyclerview;
 
 import android.content.Intent;
+import android.util.Pair;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.AlphaAnimation;
-import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
-import android.widget.TextView;
-
-import androidx.annotation.IntegerRes;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class zillaVittikRecyclerAdapter extends RecyclerView.Adapter<zillaVittikRecyclerAdapter.ViewHolder> {
 
-    private List<Integer> ab;
-    private List<Integer> clone = new ArrayList<Integer>();
+    private List<Pair<String, Integer>> ab;
+    private List<Pair<String, Integer>> clone = new ArrayList<>();
     private String[] districtnames;
-    private final static int FADE_DURATION = 500;
 
-    public zillaVittikRecyclerAdapter(List<Integer> ab, String[] districtnames) {
+    public zillaVittikRecyclerAdapter(List<Pair<String, Integer>> ab, String[] districtnames) {
         this.ab = ab;
         clone.addAll(ab);
         this.districtnames = districtnames;
@@ -41,17 +35,16 @@ public class zillaVittikRecyclerAdapter extends RecyclerView.Adapter<zillaVittik
     public void onBindViewHolder(@NonNull final zillaVittikRecyclerAdapter.ViewHolder holder, final int position) {
         ImageView imageView = holder.imageView;
         ImageView demos = imageView.findViewById(R.id.zillaImageView);
-        demos.setImageResource(ab.get(position));
+        demos.setImageResource(ab.get(position).second);
 
         demos.setAnimation(AnimationUtils.loadAnimation(holder.itemView.getContext(), R.anim.left_to_right));
 
-        /*//These things needed to be modified here
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 int x = 0;
-                Integer value = ab.get(position);
+                String value = ab.get(position).first;
 
                 for(int i=0; i<61; i++)
                 {
@@ -67,7 +60,6 @@ public class zillaVittikRecyclerAdapter extends RecyclerView.Adapter<zillaVittik
                 holder.itemView.getContext().startActivity(intent1);
             }
         });
-*/
     }
 
     @Override
@@ -89,14 +81,13 @@ public class zillaVittikRecyclerAdapter extends RecyclerView.Adapter<zillaVittik
         if(text.isEmpty()){
             ab.addAll(clone);
         } else{
-            /*
             text = text.toLowerCase();
-            for(String item: clone){
-                if(item.toLowerCase().contains(text)){
+            for(Pair<String,Integer> item: clone){
+                if(item.first.toLowerCase().contains(text)){
                     ab.add(item);
                 }
             }
-            */
+
         }
         notifyDataSetChanged();
     }

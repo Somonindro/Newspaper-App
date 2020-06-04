@@ -1,10 +1,12 @@
 package com.example.recyclerview;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
+import android.util.Pair;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.SearchView;
@@ -14,9 +16,9 @@ import java.util.List;
 
 public class zillavittik extends AppCompatActivity {
 
-    private List<Integer> list = new ArrayList<Integer>();
     private RecyclerView recyclerView;
     zillaVittikRecyclerAdapter adapter;
+    private List<Pair<String, Integer>> is = new ArrayList<>();
 
     final int[] districtimage = {R.drawable.barisal, R.drawable.bhola, R.drawable.patuakhali, R.drawable.pirojpur, R.drawable.brahmanbaria, R.drawable.chandpur,
             R.drawable.chitagong, R.drawable.comilla, R.drawable.coxs_bazar, R.drawable.feni, R.drawable.khagrachari, R.drawable.lakshmipur,
@@ -33,20 +35,35 @@ public class zillavittik extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_zillavittik);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         recyclerView = findViewById(R.id.recyclerview);
 
         final String[] districtnames=getResources().getStringArray(R.array.district);
 
-        for(Integer s:districtimage)
+        int length = districtnames.length;
+
+        for(int i=0; i<length; i++)
         {
-            list.add(s);
+            is.add(new Pair(districtnames[i], districtimage[i]));
         }
 
-        adapter = new zillaVittikRecyclerAdapter(list, districtnames);
+        adapter = new zillaVittikRecyclerAdapter(is,districtnames);
         recyclerView.setAdapter(adapter);
         GridLayoutManager layoutManager = new GridLayoutManager(this, 2);
         recyclerView.setLayoutManager(layoutManager);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId())
+        {
+            case android.R.id.home:
+                this.finish();
+                return true;
+            default:
+                return false;
+        }
     }
 
     @Override

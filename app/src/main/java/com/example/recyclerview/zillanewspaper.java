@@ -1,11 +1,13 @@
 package com.example.recyclerview;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -23,6 +25,8 @@ public class zillanewspaper extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_zillanewspaper);
+        setTitle("Local Newspaper");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         Bundle b=getIntent().getExtras();
         int x=b.getInt("key");
@@ -243,6 +247,19 @@ public class zillanewspaper extends AppCompatActivity {
                     R.drawable.sylhet11,R.drawable.sylhet12,R.drawable.sylhet13,R.drawable.sylhet14,R.drawable.sylhet15,
                     R.drawable.sylhet16,R.drawable.sylhet17,R.drawable.sylhet18,R.drawable.sylhet19,R.drawable.sylhet20,
                     R.drawable.sylhet21,R.drawable.sylhet22,R.drawable.sylhet23,R.drawable.sylhet24,R.drawable.sylhet25,R.drawable.sylhet26};
+        }
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if(item.getItemId() == android.R.id.home)
+        {
+            this.finish();
+            return true;
+        }
+        else
+        {
+            return false;
         }
     }
 }
