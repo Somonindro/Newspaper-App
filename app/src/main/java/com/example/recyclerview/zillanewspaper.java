@@ -86,7 +86,7 @@ public class zillanewspaper extends AppCompatActivity {
             flag= new int[]{R.drawable.chittagong1,R.drawable.chittagong2,R.drawable.chittagong3,R.drawable.chittagong4,R.drawable.chittagong5,R.drawable.chittagong6,R.drawable.chittagong7,R.drawable.chittagong8,R.drawable.chittagong9,R.drawable.chittagong10,R.drawable.chittagong11,R.drawable.chittagong12,R.drawable.chittagong13};
         }
         else if(x==7){
-            flag= new int[]{R.drawable.comilla1,R.drawable.comilla2,R.drawable.comilla3,R.drawable.comilla4,R.drawable.comilla5};
+            flag= new int[]{R.drawable.comilla2,R.drawable.comilla3,R.drawable.comilla4,R.drawable.comilla5};
         }
         else if(x==8){
             flag= new int[]{R.drawable.coxsbazar1,R.drawable.coxsbazar2,R.drawable.coxsbazar3};

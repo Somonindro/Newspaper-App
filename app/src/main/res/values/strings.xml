@@ -159,14 +159,12 @@
     </string-array>
 
     <string-array name="Comilla1">
-        <item>Amader Comilla</item>
         <item>Comillar kagoj</item>
         <item>Comillar Barta</item>
         <item>Comillar khobor</item>
         <item>Dailycomillanews</item>
     </string-array>
     <string-array name="Comilla2">
-        <item>http://amadercomillaa.com/beta/</item>
         <item>http://www.comillarkagoj.com/</item>
         <item>http://comillarbarta.com/</item>
         <item>http://www.comillarkhabor.com/</item>
