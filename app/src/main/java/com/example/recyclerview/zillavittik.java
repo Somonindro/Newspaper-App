@@ -1,6 +1,7 @@
 package com.example.recyclerview;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
@@ -13,10 +14,9 @@ import java.util.List;
 
 public class zillavittik extends AppCompatActivity {
 
-    private List<String> list = new ArrayList<String>();
+    private List<Integer> list = new ArrayList<Integer>();
     private RecyclerView recyclerView;
     zillaVittikRecyclerAdapter adapter;
-    final String[] districtnames=getResources().getStringArray(R.array.district);
 
     final int[] districtimage = {R.drawable.barisal, R.drawable.bhola, R.drawable.patuakhali, R.drawable.pirojpur, R.drawable.brahmanbaria, R.drawable.chandpur,
             R.drawable.chitagong, R.drawable.comilla, R.drawable.coxs_bazar, R.drawable.feni, R.drawable.khagrachari, R.drawable.lakshmipur,
@@ -36,14 +36,16 @@ public class zillavittik extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.recyclerview);
 
-        for(String s:districtnames)
+        final String[] districtnames=getResources().getStringArray(R.array.district);
+
+        for(Integer s:districtimage)
         {
             list.add(s);
         }
 
         adapter = new zillaVittikRecyclerAdapter(list, districtnames);
         recyclerView.setAdapter(adapter);
-        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+        GridLayoutManager layoutManager = new GridLayoutManager(this, 2);
         recyclerView.setLayoutManager(layoutManager);
     }
 
