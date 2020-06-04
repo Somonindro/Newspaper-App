@@ -7,4 +7,5 @@
     tools:context=".zillavittik"
     android:visibility="visible"
     android:id="@+id/recyclerview"
+    android:background="#404E5A"
     android:orientation="vertical"/>

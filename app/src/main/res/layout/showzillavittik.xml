@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TextView
+<ImageView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:padding="10dp"
-    android:background="#404E5A"
+    android:src="@drawable/bogura"
     android:layout_height="wrap_content"
-    android:id="@+id/zillatextview"
-    android:textSize="24sp"
-    android:text="Hello World"
-    android:textStyle="bold|italic"
-    android:textColor="#FFFFFF"
+    android:id="@+id/zillaImageView"
     android:gravity="center_horizontal"
     android:layout_marginBottom="10dp"/>
