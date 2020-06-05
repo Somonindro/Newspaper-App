@@ -33,8 +33,10 @@ public class commonweb extends AppCompatActivity {
         setContentView(R.layout.activity_commonweb);
 
         Bundle b=getIntent().getExtras();
+
         int x=b.getInt("key1");
         int y=b.getInt("key2");//key1 and key2 is for zillavittik
+
         int p=0;
         int q=b.getInt("key3");//eng er position
         p=b.getInt("key4");//key3 and key4 is for english
@@ -58,6 +60,7 @@ public class commonweb extends AppCompatActivity {
         w.setWebViewClient(new MyClient());
 
         if(p==0) populating(x, y);
+
         else if(p==1)
         {
             newspaper=getResources().getStringArray(R.array.Englishnewspaper2);

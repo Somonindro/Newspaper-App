@@ -18,6 +18,8 @@ public class international extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_international);
+    }
+        /*
 
         flag=new int[]{R.drawable.international1,R.drawable.international2,R.drawable.international3,R.drawable.international4,R.drawable.international5,
                 R.drawable.international6,R.drawable.international7,R.drawable.international8,R.drawable.international9,R.drawable.international10,
@@ -49,4 +51,5 @@ public class international extends AppCompatActivity {
 
         });
     }
+         */
 }
