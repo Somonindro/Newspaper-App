@@ -5,7 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.util.Pair;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -50,7 +53,33 @@ public class zillavittik extends AppCompatActivity {
 
         adapter = new zillaVittikRecyclerAdapter(is,districtnames);
         recyclerView.setAdapter(adapter);
-        GridLayoutManager layoutManager = new GridLayoutManager(this, 2);
+        GridLayoutManager layoutManager;
+
+        //For giving screen flexibility programmatically
+        //Should work on it later
+
+        if(getResources().getConfiguration().orientation == ActivityInfo.SCREEN_ORIENTATION_PORTRAIT && getResources().getDisplayMetrics().density == DisplayMetrics.DENSITY_XHIGH)
+        {
+            layoutManager = new GridLayoutManager(this, 2);
+        }
+        else if(getResources().getConfiguration().orientation == ActivityInfo.SCREEN_ORIENTATION_PORTRAIT && getResources().getDisplayMetrics().density == DisplayMetrics.DENSITY_600)
+        {
+            layoutManager = new GridLayoutManager(this, 4);
+        }
+
+        else if(getResources().getConfiguration().orientation == ActivityInfo.SCREEN_ORIENTATION_PORTRAIT && getResources().getDisplayMetrics().density == DisplayMetrics.DENSITY_XXXHIGH)
+        {
+            layoutManager = new GridLayoutManager(this, 5);
+        }
+        else if(getResources().getConfiguration().orientation == ActivityInfo.SCREEN_ORIENTATION_PORTRAIT && getResources().getDisplayMetrics().density == DisplayMetrics.DENSITY_XXHIGH)
+        {
+            layoutManager = new GridLayoutManager(this, 5);
+        }
+        else
+        {
+            layoutManager = new GridLayoutManager(this, 1);
+        }
+
         recyclerView.setLayoutManager(layoutManager);
     }
 
