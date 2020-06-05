@@ -36,6 +36,7 @@ public class zillavittik extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setTitle("Districts");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_zillavittik);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
