@@ -58,27 +58,7 @@ public class zillavittik extends AppCompatActivity {
         //For giving screen flexibility programmatically
         //Should work on it later
 
-        if(getResources().getConfiguration().orientation == ActivityInfo.SCREEN_ORIENTATION_PORTRAIT && getResources().getDisplayMetrics().density == DisplayMetrics.DENSITY_XHIGH)
-        {
-            layoutManager = new GridLayoutManager(this, 2);
-        }
-        else if(getResources().getConfiguration().orientation == ActivityInfo.SCREEN_ORIENTATION_PORTRAIT && getResources().getDisplayMetrics().density == DisplayMetrics.DENSITY_600)
-        {
-            layoutManager = new GridLayoutManager(this, 4);
-        }
-
-        else if(getResources().getConfiguration().orientation == ActivityInfo.SCREEN_ORIENTATION_PORTRAIT && getResources().getDisplayMetrics().density == DisplayMetrics.DENSITY_XXXHIGH)
-        {
-            layoutManager = new GridLayoutManager(this, 5);
-        }
-        else if(getResources().getConfiguration().orientation == ActivityInfo.SCREEN_ORIENTATION_PORTRAIT && getResources().getDisplayMetrics().density == DisplayMetrics.DENSITY_XXHIGH)
-        {
-            layoutManager = new GridLayoutManager(this, 5);
-        }
-        else
-        {
-            layoutManager = new GridLayoutManager(this, 1);
-        }
+        layoutManager = new GridLayoutManager(this, 2);
 
         recyclerView.setLayoutManager(layoutManager);
     }
