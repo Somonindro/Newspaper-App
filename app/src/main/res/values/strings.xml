@@ -134,8 +134,8 @@
     <string-array name="Chittagong1">
         <item>Doinik Azadi</item>
         <item>Doinik Purbokone</item>
-        <item>Ctg times</item>
-        <item>Chottogram news</item>
+        <item>Ctg Times</item>
+        <item>Chottogram News</item>
         <item>Suprovath</item>
         <item>Doinik Purbodesh</item>
         <item>Parbatta News</item>
@@ -163,12 +163,14 @@
     </string-array>
 
     <string-array name="Comilla1">
-        <item>Comillar kagoj</item>
+        <item>Amader Comilla</item>
+        <item>Comillar Kagoj</item>
         <item>Comillar Barta</item>
-        <item>Comillar khobor</item>
-        <item>Dailycomillanews</item>
+        <item>Comillar Khobor</item>
+        <item>Daily Comilla News</item>
     </string-array>
     <string-array name="Comilla2">
+        <item>http://amadercomillaa.com/beta/</item>
         <item>http://www.comillarkagoj.com/</item>
         <item>http://comillarbarta.com/</item>
         <item>http://www.comillarkhabor.com/</item>
@@ -176,8 +178,8 @@
     </string-array>
 
     <string-array name="Coxsbazar1">
-        <item>Coxsbazar news</item>
-        <item>Coxs bangla</item>
+        <item>Coxsbazar Bews</item>
+        <item>Coxs Bangla</item>
         <item>Doinik Coxsbazar</item>
     </string-array>
     <string-array name="Coxsbazar2">
@@ -198,7 +200,7 @@
     </string-array>
 
     <string-array name="Khagrachori1">
-        <item>Khagrachari news</item>
+        <item>Khagrachari News</item>
         <item>News of Khagrachari</item>
         <item>Doinik Khagrachari</item>
     </string-array>
@@ -211,9 +213,9 @@
     <string-array name="Lakshmipur1">
         <item>Lakshmipur24</item>
         <item>Lakshmipur Times</item>
-        <item>Lakshmipurbarta</item>
+        <item>Lakshmipur Barta</item>
         <item>Lakshmipur News</item>
-        <item>Laxmipurnews</item>
+        <item>Laxmipur News</item>
         <item>Shersha Songbadh</item>
     </string-array>
     <string-array name="Lakshmipur2">
@@ -843,7 +845,32 @@
         <item>https://tbsnews.net/</item>
     </string-array>
 
-    <string-array name="jobsite">
+    <string-array name="Jobsite1">
+        <item>Prothom Alo</item>
+        <item>Bangladesh Protidin</item>
+        <item>Amar Songbad</item>
+        <item>Protidiner Songbad</item>
+        <item>Doinik Sanggram</item>
+        <item>Amader Somoy</item>
+        <item>BD Jobs</item>
+        <item>Chakri</item>
+        <item>Noyadigonto Jobs</item>
+        <item>Jobs in BD</item>
+        <item>JobsA1</item>
+        <item>Job</item>
+        <item>BD Jobs Today</item>
+        <item>Jobsite</item>
+        <item>Chakrir Khobor</item>
+        <item>All Jobs BD</item>
+    </string-array>
+
+    <string-array name="Jobsite2">
+        <item>https://www.prothomalo.com/chakri-bakri</item>
+        <item>https://www.bd-pratidin.com/job-market</item>
+        <item>https://www.dailyamarsangbad.com/job</item>
+        <item>http://www.protidinersangbad.com/todays-newspaper/find-jobs</item>
+        <item>https://dailysangram.com/section/career-news</item>
+        <item>http://www.dainikamadershomoy.com/jobs</item>
         <item>https://www.bdjobs.com/</item>
         <item>https://www.chakri.com/</item>
         <item>http://www.nayadigantajobs.com/</item>
@@ -854,19 +881,43 @@
         <item>https://www.jobsite.co.uk/</item>
         <item>https://chakrirkhobor.com.bd/</item>
         <item>https://www.alljobsbd.com/</item>
-        <item>https://bd-career.com/</item>
-        <item>http://www.bdhoteljobs.com/</item>
     </string-array>
 
-    <string-array name="educationalsite">
-        <item>http://www.educationboardresults.gov.bd/</item>
+    <string-array name="Educationalsite1">
+        <item>Prothom Alo</item>
+        <item>Bangladesh Protidin</item>
+        <item>Ittefaq</item>
+        <item>Amar Songbad</item>
+        <item>Protidiner Songbad</item>
+        <item>Jugantor</item>
+        <item>Doinik Sanggram</item>
+        <item>Manobjomin</item>
+        <item>Education Bangla</item>
+        <item>Sikkhok Batayon</item>
+        <item>Eshikhon</item>
+        <item>Studypress</item>
+        <item>Educarnival</item>
+        <item>Edpd</item>
+        <item>Bangla Book PDF</item>
+        <item>Amar Pathshala</item>
+        <item>Lekhapora BD</item>
+        <item>Doinik Sikkha</item>
+    </string-array>
+
+    <string-array name="Educationalsite2">
+        <item>https://www.prothomalo.com/education</item>
+        <item>https://www.bd-pratidin.com/campus-online</item>
+        <item>https://www.ittefaq.com.bd/education</item>
+        <item>https://www.dailyamarsangbad.com/education</item>
+        <item>http://www.protidinersangbad.com/education-premises</item>
+        <item>https://www.jugantor.com/m/campus</item>
+        <item>https://dailysangram.com/section/education</item>
+        <item>http://www.m.mzamin.com/category.php?cat=11</item>
         <item>http://www.educationbangla.com/</item>
-        <item>https://www.10minuteschool.com/</item>
         <item>https://www.teachers.gov.bd/</item>
         <item>https://eshikhon.com/</item>
         <item>https://studypress.org/</item>
         <item>https://www.educarnival.com/</item>
-        <item>http://shikkhok.com/</item>
         <item>http://www.edpdbd.org/</item>
         <item>http://banglabookspdf.blogspot.com/?m=1</item>
         <item>https://amarpathshala.com/</item>
@@ -874,7 +925,31 @@
         <item>http://m.dainikshiksha.com/</item>
     </string-array>
 
-    <string-array name="internationalsite">
+    <string-array name="Internationalsite1">
+        <item>BBC News</item>
+        <item>CNN</item>
+        <item>BSS</item>
+        <item>ABC news</item>
+        <item>UNB</item>
+        <item>The NewYork Times</item>
+        <item>USA Today</item>
+        <item>India Times</item>
+        <item>Fox News</item>
+        <item>The Washington Post</item>
+        <item>Hindustan Times</item>
+        <item>The Guardian</item>
+        <item>NDTV</item>
+        <item>Asian Tribune</item>
+        <item>Reuters</item>
+        <item>Alizazerra</item>
+        <item>AP</item>
+        <item>AFP</item>
+        <item>The Moscow Time</item>
+        <item>Euro News</item>
+        <item>Sky News</item>
+    </string-array>
+
+    <string-array name="Internationalsite2">
         <item>https://www.bbc.com/</item>
         <item>https://edition.cnn.com/</item>
         <item>http://www.bssnews.net/</item>
@@ -896,6 +971,69 @@
         <item>https://www.themoscowtimes.com/</item>
         <item>https://www.euronews.com/</item>
         <item>https://news.sky.com/</item>
+    </string-array>
+
+    <string-array name="Khela1">
+        <item>Prothom Alo</item>
+        <item>Bangladesh Protidin</item>
+        <item>Ittefaq</item>
+        <item>Kaler Kontho</item>
+        <item>Noyadigonto</item>
+        <item>Amar Songbad</item>
+        <item>Protidiner Songbad</item>
+        <item>Jugantor</item>
+        <item>Doinik Sanggram</item>
+        <item>Manobjomin</item>
+        <item>Amader Somoy</item>
+        <item>Somokal</item>
+        <item>Manobkontho</item>
+    </string-array>
+
+    <string-array name="Khela2">
+        <item>https://www.prothomalo.com/sports</item>
+        <item>https://www.bd-pratidin.com/sports</item>
+        <item>https://www.ittefaq.com.bd/sports</item>
+        <item>https://www.kalerkantho.com/online/sport</item>
+        <item>https://www.dailynayadiganta.com/sports/11</item>
+        <item>https://www.dailyamarsangbad.com/sports</item>
+        <item>http://www.protidinersangbad.com/todays-newspaper/khela</item>
+        <item>https://www.jugantor.com/m/sports</item>
+        <item>https://dailysangram.com/section/sports</item>
+        <item>http://www.m.mzamin.com/category.php?cat=4</item>
+        <item>http://www.dainikamadershomoy.com/sports</item>
+        <item>https://samakal.com/sports</item>
+        <item>https://www.manobkantha.com.bd/category/cricket/25</item>
+    </string-array>
+
+    <string-array name="Binodon1">
+        <item>Prothom Alo</item>
+        <item>Bangladesh Protidin</item>
+        <item>Ittefaq</item>
+        <item>Kaler Kontho</item>
+        <item>Noyadigonto</item>
+        <item>Amar Songbad</item>
+        <item>Protidiner Songbad</item>
+        <item>Jugantor</item>
+        <item>Manobjomin</item>
+        <item>Amader Somoy</item>
+        <item>Somokal</item>
+        <item>Manobkontho</item>
+
+    </string-array>
+
+    <string-array name="Binodon2">
+        <item>https://www.prothomalo.com/entertainment</item>
+        <item>https://www.bd-pratidin.com/entertainment-news</item>
+        <item>https://www.ittefaq.com.bd/entertainment</item>
+        <item>https://www.kalerkantho.com/online/entertainment</item>
+        <item>https://www.dailynayadiganta.com/entertainment/16</item>
+        <item>https://www.dailyamarsangbad.com/entertainment</item>
+        <item>http://www.protidinersangbad.com/todays-newspaper/entertainment</item>
+        <item>https://www.jugantor.com/m/entertainment</item>
+        <item>http://www.m.mzamin.com/category.php?cat=5</item>
+        <item>http://www.dainikamadershomoy.com/entertainment</item>
+        <item>https://samakal.com/entertainment</item>
+        <item>https://www.manobkantha.com.bd/category/entertainment/2</item>
     </string-array>
 
     <string-array name="tvchannel">

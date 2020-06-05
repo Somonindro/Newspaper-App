@@ -9,6 +9,7 @@ import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -18,12 +19,14 @@ import com.google.android.gms.ads.initialization.OnInitializationCompleteListene
 
 import org.adblockplus.libadblockplus.android.webview.AdblockWebView;
 
+
 public class commonweb extends AppCompatActivity {
 
     private String[] newspaper;
     private AdblockWebView w;
     private ProgressBar progressBar;
     AdView mAdView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,13 +38,11 @@ public class commonweb extends AppCompatActivity {
         Bundle b=getIntent().getExtras();
 
         int x=b.getInt("key1");
-        int y=b.getInt("key2");//key1 and key2 is for zillavittik
+        int y=b.getInt("key2");
+        //this two keys identify the position and the field
 
-        int p=0;
-        int q=b.getInt("key3");//eng er position
-        p=b.getInt("key4");//key3 and key4 is for english
-        //for zillavittik p will be still 0
-        int r=b.getInt("key5");//international er position
+        Toast.makeText(this,"Please wait...",Toast.LENGTH_LONG).show();
+
 
         progressBar = findViewById(R.id.progressBar);
         mAdView = findViewById(R.id.adView);
@@ -59,18 +60,8 @@ public class commonweb extends AppCompatActivity {
         w.setWebChromeClient(new MyChrome());
         w.setWebViewClient(new MyClient());
 
-        if(p==0) populating(x, y);
+        populating(x, y);
 
-        else if(p==1)
-        {
-            newspaper=getResources().getStringArray(R.array.Englishnewspaper2);
-            w.loadUrl(newspaper[q]);
-        }
-        else if(p==2)
-        {
-            newspaper=getResources().getStringArray(R.array.internationalsite);
-            w.loadUrl(newspaper[r]);
-        }
 
     }
 
@@ -115,7 +106,41 @@ public class commonweb extends AppCompatActivity {
 
     private void populating(int x, int y) {
 
-        if(y==0)
+        if(y==60)
+        {
+            newspaper=getResources().getStringArray(R.array.Englishnewspaper2);
+            w.loadUrl(newspaper[x]);
+        }
+        else if(y==61)
+        {
+            newspaper=getResources().getStringArray(R.array.Internationalsite2);
+            w.loadUrl(newspaper[x]);
+        }
+        else if(y==62)
+        {
+            newspaper=getResources().getStringArray(R.array.Khela2);
+            w.loadUrl(newspaper[x]);
+        }
+        else if(y==63)
+        {
+            newspaper=getResources().getStringArray(R.array.Jobsite2);
+            w.loadUrl(newspaper[x]);
+        }
+        else if(y==64)
+        {
+            newspaper=getResources().getStringArray(R.array.Educationalsite2);
+            w.loadUrl(newspaper[x]);
+        }
+        else if(y==65)
+        {
+            newspaper=getResources().getStringArray(R.array.Binodon2);
+            w.loadUrl(newspaper[x]);
+        }
+
+
+
+        //here the jillavittik newspapers start
+        else if(y==0)
         {
             newspaper=getResources().getStringArray(R.array.Barishal2);
             w.loadUrl(newspaper[x]);

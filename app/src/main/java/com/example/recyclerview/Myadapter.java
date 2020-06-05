@@ -56,6 +56,7 @@ public class Myadapter extends RecyclerView.Adapter<Myadapter.Myviewholder> {
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     public void onBindViewHolder(@NonNull Myviewholder holder, final int position) {
+
         CardView cardView = holder.cardView;
         ImageView imageView = cardView.findViewById(R.id.zillaWiseImage);
         TextView textView = cardView.findViewById(R.id.zillaWiseText);
@@ -91,6 +92,7 @@ public class Myadapter extends RecyclerView.Adapter<Myadapter.Myviewholder> {
             cardView = itemView;
         }
     }
+
 
 }
 
