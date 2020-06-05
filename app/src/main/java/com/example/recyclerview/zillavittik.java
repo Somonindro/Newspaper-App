@@ -5,7 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.util.Pair;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -50,7 +53,12 @@ public class zillavittik extends AppCompatActivity {
 
         adapter = new zillaVittikRecyclerAdapter(is,districtnames);
         recyclerView.setAdapter(adapter);
-        GridLayoutManager layoutManager = new GridLayoutManager(this, 2);
+        GridLayoutManager layoutManager;
+
+        //For giving screen flexibility programmatically
+
+        layoutManager = new GridLayoutManager(this, 2);
+
         recyclerView.setLayoutManager(layoutManager);
     }
 

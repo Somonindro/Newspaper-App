@@ -71,6 +71,7 @@
         <item>Barishal Barta</item>
         <item>Barishal Crime News</item>
     </string-array>
+
     <string-array name="Barishal2">
         <item>http://www.amaderbarisal.com/</item>
         <item>https://barishalnews.com/</item>
@@ -84,6 +85,7 @@
         <item>Bhola News</item>
         <item>Doinik Ajker Vola</item>
     </string-array>
+
     <string-array name="Bhola2">
         <item>https://www.bholanews.com/</item>
         <item>http://www.ajkerbhola.com/</item>
@@ -92,6 +94,7 @@
     <string-array name="Patuakhali1">
         <item>Doinik Patuakhali</item>
     </string-array>
+
     <string-array name="Patuakhali2">
         <item>https://doinikpatuakhali.com/</item>
     </string-array>
@@ -99,6 +102,7 @@
     <string-array name="Pirojpur1">
         <item>Pirojpur Times</item>
     </string-array>
+
     <string-array name="Pirojpur2">
         <item>http://pirojpurtimes24.com/</item>
     </string-array>
