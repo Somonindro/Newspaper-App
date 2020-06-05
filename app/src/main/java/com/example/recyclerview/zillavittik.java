@@ -56,7 +56,6 @@ public class zillavittik extends AppCompatActivity {
         GridLayoutManager layoutManager;
 
         //For giving screen flexibility programmatically
-        //Should work on it later
 
         layoutManager = new GridLayoutManager(this, 2);
 
