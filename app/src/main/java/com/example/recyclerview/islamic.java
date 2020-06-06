@@ -23,7 +23,7 @@ public class islamic extends AppCompatActivity {
         setTitle("Live Tv Streaming");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        flag = new int[]{R.drawable.islamic_radio};
+        flag = new int[]{R.drawable.islamicradio};
 
         radio = getResources().getStringArray(R.array.islamicradio1);
 
