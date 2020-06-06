@@ -1,7 +1,10 @@
 package com.example.recyclerview;
 
+import android.app.Activity;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.view.MenuItem;
 import android.view.View;
 
@@ -17,6 +20,7 @@ public class chakri extends AppCompatActivity {
     private RecyclerView recyclerView;
     int[] flag;
     private String[] papernames;
+    GridLayoutManager layoutManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +41,15 @@ public class chakri extends AppCompatActivity {
 
         myadapter=new Myadapter(this, flag, papernames, 63);
         recyclerView.setAdapter(myadapter);
-        GridLayoutManager layoutManager = new GridLayoutManager(this, 2);
+
+        if(getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT)
+        {
+            layoutManager = new GridLayoutManager(this, 2);
+        }
+        else
+        {
+            layoutManager = new GridLayoutManager(this, 2);
+        }
         recyclerView.setLayoutManager(layoutManager);
     }
 

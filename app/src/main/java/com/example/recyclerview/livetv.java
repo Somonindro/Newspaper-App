@@ -30,7 +30,7 @@ public class livetv extends AppCompatActivity {
 
         tvnames = getResources().getStringArray(R.array.tvchannel1);
 
-        recyclerView = recyclerView=(RecyclerView)findViewById(R.id.zillaWiseRecyclerView);
+        recyclerView = (RecyclerView)findViewById(R.id.zillaWiseRecyclerView);
 
         myadapter=new Myadapter(this, flag, tvnames, 66);
         recyclerView.setAdapter(myadapter);

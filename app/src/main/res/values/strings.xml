@@ -1131,4 +1131,32 @@
         <item>http://kholakagojbd.com/</item>
     </string-array>
 
+    <string-array name="radio1">
+        <item>Radio Today</item>
+        <item>Radio Bhumi</item>
+        <item>ABC Radio</item>
+        <item>Bangla News 24</item>
+        <item>BBC Radio</item>
+        <item>Jago Fm</item>
+        <item>Colours Fm</item>
+    </string-array>
+
+    <string-array name="radio2">
+        <item>http://node-28.zeno.fm/0zha3rfq02quv?rj-ttl=5&amp;rj-tok=AAABcop4RtQAOcXKsSVfzHbFbg</item>
+        <item>http://149.56.195.94:8545/;stream.mp3</item>
+        <item>http://node-18.zeno.fm/h7n8ug96eeruv?rj-ttl=5&amp;rj-tok=AAABcoq3AxwA3q903rZ1OwQ5Zg</item>
+        <item>http://185.105.4.53:8146/stream</item>
+        <item>http://sc18.ord.llnw.net/stream/bbcwssc_mp1_ws-benga</item>
+        <item>http://128.199.184.111:12496/;stream/1</item>
+        <item>http://45.64.135.88:8000/stream1;stream.mp3</item>
+    </string-array>
+
+    <string-array name="islamicradio1">
+        <item>Islamic Radio</item>
+    </string-array>
+
+    <string-array name="islamicradio2">
+        <item>http://66.45.232.131:9994/;stream/1</item>
+    </string-array>
+
 </resources>

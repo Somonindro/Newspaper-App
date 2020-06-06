@@ -68,12 +68,14 @@ public class Myadapter extends RecyclerView.Adapter<Myadapter.Myviewholder> {
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 int x = intentVar;
 
-                if(intentVar == 66)
+                if(intentVar == 66 || intentVar == 67 || intentVar == 68)
                 {
                     intent2 = new Intent(context, commonweb2.class);
                 }
+
                 else
                 {
                     intent2 = new Intent(context, commonweb.class);
@@ -101,7 +103,6 @@ public class Myadapter extends RecyclerView.Adapter<Myadapter.Myviewholder> {
             cardView = itemView;
         }
     }
-
 
 }
 

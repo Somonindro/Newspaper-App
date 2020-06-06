@@ -61,6 +61,7 @@ public class commonweb2 extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
+        w.loadUrl("about:blank");
         if(w.canGoBack())
         {
             w.goBack();
@@ -74,6 +75,15 @@ public class commonweb2 extends AppCompatActivity {
         if(y == 66)
         {
             newspaper = getResources().getStringArray(R.array.tvchannel2);
+            w.loadUrl(newspaper[x]);
+        }
+        else if(y == 67){
+            newspaper = getResources().getStringArray(R.array.radio2);
+            w.loadUrl(newspaper[x]);
+        }
+        else
+        {
+            newspaper = getResources().getStringArray(R.array.islamicradio2);
             w.loadUrl(newspaper[x]);
         }
     }
