@@ -1036,27 +1036,43 @@
         <item>https://www.manobkantha.com.bd/category/entertainment/2</item>
     </string-array>
 
-    <string-array name="tvchannel">
-        <item>https://www.channelionline.com/</item>
-        <item>http://independent24.com/</item>
-        <item>https://m.somoynews.tv/</item>
-        <item>https://www.ntvbd.com/</item>
-        <item>http://www.channel24bd.tv/</item>
-        <item>https://m.rtvonline.com/</item>
-        <item>https://www.ekushey-tv.com/</item>
-        <item>https://www.atnbangla.tv/</item>
-        <item>http://jamuna.tv/</item>
-        <item>https://www.satv.tv/</item>
-        <item>https://desh.tv/</item>
-        <item>http://maasranga.tv/</item>
-        <item>https://banglavision.tv/</item>
-        <item>http://www.channelninebd.tv/channel9/home.php</item>
-        <item>http://mytvbd.tv/</item>
-        <item>http://boishakhionline.com/</item>
-        <item>http://www.mohona.tv/</item>
-        <item>http://gazitv.com/</item>
-        <item>http://btv.gov.bd/</item>
-        <item>http://channel-16tv.com/</item>
+
+    <string-array name="tvchannel1">
+
+        <item>Ekattor TV</item>
+        <item>RTV live</item>
+        <item>ATN News</item>
+        <item>Channel 24</item>
+        <item>Somoy news</item>
+        <item>Jamuna TV</item>
+        <item>NTV</item>
+        <item>Bangla Vision</item>
+        <item>DBC news</item>
+        <item>News 24</item>
+        <item>ETV</item>
+        <item>AL-Zazerra</item>
+        <item>Ananda TV</item>
+        <item>Madinah TV</item>
+
+    </string-array>
+
+    <string-array name="tvchannel2">
+
+        <item>https://www.youtube.com/embed/pIWJA6lASq4</item>//ekattor tv
+        <item>https://www.youtube.com/embed/mLTGj-fY6f0</item>//rtv live
+        <item>https://www.youtube.com/embed/W1RS71yv_u4</item>//atn_bangla
+        <item>https://www.youtube.com/embed/Rz1icimZ1KQ</item>//channel 24
+        <item>https://www.youtube.com/embed/KgiwN7ddb2U</item>//somoy
+        <item>https://www.youtube.com/embed/PsA5PGfZl7g</item>//jamuna tv
+        <item>https://www.youtube.com/embed/VukXzLKNF9A</item>//ntv live
+        <item>https://www.youtube.com/embed/DHvdiJILcqI</item>//bangla vision
+        <item>https://www.youtube.com/embed/bJuKFV2opeA</item>//DBC news
+        <item>https://www.youtube.com/embed/Zjfh6Rducz4</item>//News 24
+        <item>https://www.youtube.com/embed/1-aDvUGKuDg</item>//ETV live
+        <item>https://www.youtube.com/embed/2EppLNonncc</item>//Al Zazerra live
+        <item>https://www.youtube.com/embed/1r2w-b5laYo</item>//Ananda tv live
+        <item>https://www.youtube.com/embed/LyrLaM6vcmY</item>//Madinah live
+
     </string-array>
 
 </resources>

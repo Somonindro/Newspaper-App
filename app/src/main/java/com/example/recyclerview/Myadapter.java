@@ -29,6 +29,7 @@ public class Myadapter extends RecyclerView.Adapter<Myadapter.Myviewholder> {
     private List<Pair<String, Integer>> pii = new ArrayList<>();
     private List<Pair<String, Integer>> clone = new ArrayList<>();
     private int intentVar;
+    Intent intent2;
 
     public Myadapter(Context context, int[] flag, String[] papernames, int intentVar) {
         this.context = context;
@@ -53,7 +54,6 @@ public class Myadapter extends RecyclerView.Adapter<Myadapter.Myviewholder> {
         return new Myviewholder(cv);
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     public void onBindViewHolder(@NonNull Myviewholder holder, final int position) {
 
@@ -69,7 +69,16 @@ public class Myadapter extends RecyclerView.Adapter<Myadapter.Myviewholder> {
             @Override
             public void onClick(View v) {
                 int x = intentVar;
-                Intent intent2=new Intent(context, commonweb.class);
+
+                if(intentVar == 66)
+                {
+                    intent2 = new Intent(context, commonweb2.class);
+                }
+                else
+                {
+                    intent2 = new Intent(context, commonweb.class);
+                }
+
                 intent2.putExtra("key1", position);
                 intent2.putExtra("key2",x);
                 context.startActivity(intent2);

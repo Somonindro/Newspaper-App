@@ -15,7 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".islamic"></activity>
+        <activity android:name=".commonweb2"
+            android:configChanges="screenSize|orientation"></activity>
+        <activity android:name=".islamic" />
         <activity android:name=".liveradio" />
         <activity android:name=".livetv" />
         <activity android:name=".binodon" />

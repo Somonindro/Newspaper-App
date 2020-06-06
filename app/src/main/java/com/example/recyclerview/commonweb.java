@@ -32,7 +32,6 @@ public class commonweb extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
-        //hello
         setContentView(R.layout.activity_commonweb);
 
         Bundle b=getIntent().getExtras();
@@ -61,7 +60,6 @@ public class commonweb extends AppCompatActivity {
         w.setWebViewClient(new MyClient());
 
         populating(x, y);
-
 
     }
 
@@ -136,8 +134,6 @@ public class commonweb extends AppCompatActivity {
             newspaper=getResources().getStringArray(R.array.Binodon2);
             w.loadUrl(newspaper[x]);
         }
-
-
 
         //here the jillavittik newspapers start
         else if(y==0)
