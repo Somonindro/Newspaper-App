@@ -27,7 +27,7 @@ public class binodon extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
-        flag=new int[]{R.drawable.prothomalo,R.drawable.bdprotidin,R.drawable.ittefaq,R.drawable.kalerkontho,R.drawable.noyadigonto,
+        flag=new int[]{R.drawable.prothomalo,R.drawable.bdprotidin,R.drawable.jatiyo21,R.drawable.kalerkontho,R.drawable.noyadigonto,
                 R.drawable.amarsongbad,R.drawable.protidinersongbad,R.drawable.jugantor,R.drawable.manobjomin,
                 R.drawable.amadersomoy,R.drawable.somokal,R.drawable.manobkontho};
         papernames = getResources().getStringArray(R.array.Binodon1);

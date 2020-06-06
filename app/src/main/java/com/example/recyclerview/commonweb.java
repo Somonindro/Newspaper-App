@@ -134,6 +134,11 @@ public class commonweb extends AppCompatActivity {
             newspaper=getResources().getStringArray(R.array.Binodon2);
             w.loadUrl(newspaper[x]);
         }
+        else if(y==70)
+        {
+            newspaper=getResources().getStringArray(R.array.Jatiyo2);
+            w.loadUrl(newspaper[x]);
+        }
 
         //here the jillavittik newspapers start
         else if(y==0)

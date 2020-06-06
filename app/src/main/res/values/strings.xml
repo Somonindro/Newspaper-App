@@ -1075,4 +1075,60 @@
 
     </string-array>
 
+    <string-array name="Jatiyo1">
+        <item>Prothom Alo</item>
+        <item>Bangladesh Protidin</item>
+        <item>Kaler Kontho</item>
+        <item>Jugantor</item>
+        <item>Ittefaq</item>
+        <item>Manobjomin</item>
+        <item>Somokal</item>
+        <item>Amader Somoy</item>
+        <item>Jonokontho</item>
+        <item>Inqilab</item>
+        <item>Vorer Kagoj</item>
+        <item>Songbad</item>
+        <item>Noyadigonto</item>
+        <item>Jay Jay Din</item>
+        <item>Doinik Sanggram</item>
+        <item>Manobkontho</item>
+        <item>Ajkaler Khobor</item>
+        <item>Ajker Potrika</item>
+        <item>Protidiner Songbad</item>
+        <item>Doinik Dinkal</item>
+        <item>Bangladesher Khobor</item>
+        <item>Bangladesh Journal</item>
+        <item>Amar Songbad</item>
+        <item>Vorer Pata</item>
+        <item>Khola Kagoj</item>
+    </string-array>
+
+    <string-array name="Jatiyo2">
+        <item>https://www.prothomalo.com/</item>
+        <item>https://www.bd-pratidin.com/</item>
+        <item>https://www.kalerkantho.com/</item>
+        <item>https://www.jugantor.com/m</item>
+        <item>https://www.ittefaq.com.bd/</item>
+        <item>http://mzamin.com/</item>
+        <item>https://samakal.com/</item>
+        <item>http://www.dainikamadershomoy.com/</item>
+        <item>https://www.dailyjanakantha.com/</item>
+        <item>https://m.dailyinqilab.com/</item>
+        <item>http://www.bhorerkagoj.com/</item>
+        <item>http://m.thesangbad.net/</item>
+        <item>https://dailynayadiganta.com/</item>
+        <item>http://jjdin.com/</item>
+        <item>https://dailysangram.com/</item>
+        <item>https://www.manobkantha.com.bd/</item>
+        <item>http://ajkalerkhobor.com/</item>
+        <item>https://ajkerpatrika.com/</item>
+        <item>http://www.protidinersangbad.com/</item>
+        <item>https://www.dainikdinkal.com/</item>
+        <item>http://bangladesherkhabor.net/</item>
+        <item>http://bd-journal.com/</item>
+        <item>https://www.dailyamarsangbad.com/</item>
+        <item>https://www.dailyvorerpata.com/</item>
+        <item>http://kholakagojbd.com/</item>
+    </string-array>
+
 </resources>
