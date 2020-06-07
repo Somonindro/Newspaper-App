@@ -9,6 +9,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.Arrays;
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     private ImageView zillaVittik, jatiyo, english, international, khela, chakri, sikkha, binodon,
@@ -21,7 +27,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setTitle("Home");
 
         viewSettings();
-
     }
 
     private void viewSettings() {

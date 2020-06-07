@@ -1056,24 +1056,6 @@
 
     </string-array>
 
-    <string-array name="tvchannel2">
-
-        <item>https://www.youtube.com/embed/pIWJA6lASq4</item>//ekattor tv
-        <item>https://www.youtube.com/embed/mLTGj-fY6f0</item>//rtv live
-        <item>https://www.youtube.com/embed/W1RS71yv_u4</item>//atn_bangla
-        <item>https://www.youtube.com/embed/Rz1icimZ1KQ</item>//channel 24
-        <item>https://www.youtube.com/embed/KgiwN7ddb2U</item>//somoy
-        <item>https://www.youtube.com/embed/VukXzLKNF9A</item>//ntv live
-        <item>https://www.youtube.com/embed/XHse5c99MF0</item>//jamuna tv
-        <item>https://www.youtube.com/embed/DHvdiJILcqI</item>//bangla vision
-        <item>https://www.youtube.com/embed/bJuKFV2opeA</item>//DBC news
-        <item>https://www.youtube.com/embed/Zjfh6Rducz4</item>//News 24
-        <item>https://www.youtube.com/embed/1-aDvUGKuDg</item>//ETV live
-        <item>https://www.youtube.com/embed/2EppLNonncc</item>//Al Zazerra live
-        <item>https://www.youtube.com/embed/1r2w-b5laYo</item>//Ananda tv live
-        <item>https://www.youtube.com/embed/LyrLaM6vcmY</item>//Madinah live
-    </string-array>
-
     <string-array name="Jatiyo1">
         <item>Prothom Alo</item>
         <item>Bangladesh Protidin</item>
