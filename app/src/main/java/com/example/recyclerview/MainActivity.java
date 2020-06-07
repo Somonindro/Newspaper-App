@@ -140,14 +140,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.home_menu, menu);
-        MenuItem menuItem = menu.findItem(R.id.exit);
-        menuItem.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+
+        MenuItem menuItem1 = menu.findItem(R.id.exit);
+        MenuItem menuItem2 = menu.findItem(R.id.feedback);
+
+        menuItem1.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
                 finish();
                 return true;
             }
         });
+
+        menuItem2.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                Intent intent = new Intent(getApplicationContext(), feedback.class);
+                startActivity(intent);
+                return true;
+            }
+        });
+
         return super.onCreateOptionsMenu(menu);
     }
 }

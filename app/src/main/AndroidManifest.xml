@@ -15,8 +15,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".commonweb2"
-            android:configChanges="screenSize|orientation"></activity>
+        <activity android:name=".feedback"></activity>
+        <activity
+            android:name=".commonweb2"
+            android:configChanges="screenSize|orientation" />
         <activity android:name=".islamic" />
         <activity android:name=".liveradio" />
         <activity android:name=".livetv" />
@@ -26,8 +28,7 @@
         <activity android:name=".khela" />
         <activity android:name=".international" />
         <activity android:name=".english" />
-        <activity android:name=".jatiyo" />
-        <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+        <activity android:name=".jatiyo" /> <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-3940256099942544~3347511713" />
