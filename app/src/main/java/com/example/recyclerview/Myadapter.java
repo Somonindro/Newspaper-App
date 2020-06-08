@@ -3,6 +3,8 @@ package com.example.recyclerview;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Typeface;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Pair;
@@ -12,6 +14,7 @@ import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
@@ -71,22 +74,43 @@ public class Myadapter extends RecyclerView.Adapter<Myadapter.Myviewholder> {
 
                 int x = intentVar;
 
-                if(intentVar == 66 || intentVar == 67 || intentVar == 68)
+                if(!isInternetAvailable())
                 {
-                    intent2 = new Intent(context, commonweb2.class);
+                    Toast.makeText(context, "Please check your internet connection", Toast.LENGTH_SHORT).show();
+                    return;
                 }
 
                 else
                 {
-                    intent2 = new Intent(context, commonweb.class);
+                    if(intentVar == 66 || intentVar == 67 || intentVar == 68)
+                    {
+                        intent2 = new Intent(context, commonweb2.class);
+                    }
+
+                    else
+                    {
+                        intent2 = new Intent(context, commonweb.class);
+                    }
+
+                    intent2.putExtra("key1", position);
+                    intent2.putExtra("key2",x);
+                    context.startActivity(intent2);
                 }
 
-                intent2.putExtra("key1", position);
-                intent2.putExtra("key2",x);
-                context.startActivity(intent2);
             }
         });
 
+    }
+
+    public boolean isInternetAvailable() {
+        ConnectivityManager cm =
+                (ConnectivityManager)context.getSystemService(context.CONNECTIVITY_SERVICE);
+
+        NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
+
+        boolean isConnected = activeNetwork != null && activeNetwork.isConnectedOrConnecting();
+
+        return isConnected;
     }
 
     @Override

@@ -360,8 +360,6 @@ public class zillanewspaper extends AppCompatActivity {
         if(item.getItemId() == android.R.id.home)
         {
             this.finish();
-            Intent intent = new Intent(this, zillavittik.class);
-            startActivity(intent);
             return true;
         }
         else

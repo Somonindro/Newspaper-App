@@ -3,12 +3,16 @@ package com.example.recyclerview;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
+import com.google.android.gms.ads.MobileAds;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -26,7 +30,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         setTitle("Home");
 
+        MobileAds.initialize(this, "ca-app-pub-7076860777204313~2986517262");
+
         viewSettings();
+
     }
 
     private void viewSettings() {
@@ -59,82 +66,103 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
 
-        switch(v.getId())
+        if(!isInternetAvailable())
         {
+            Toast.makeText(getApplicationContext(), "Please check your internet connection", Toast.LENGTH_SHORT).show();
+            return;
+        }
 
-            case R.id.zilaVittik: {
-                Intent intent = new Intent(MainActivity.this, zillavittik.class);
-                startActivity(intent);
-                break;
-            }
+        else
+        {
+            switch(v.getId())
+            {
 
-            case R.id.jatiyo:
-            {
-                Intent intent = new Intent(MainActivity.this, jatiyo.class);
-                startActivity(intent);
-                break;
-            }
+                case R.id.zilaVittik: {
+                    Intent intent = new Intent(MainActivity.this, zillavittik.class);
+                    startActivity(intent);
+                    break;
+                }
 
-            case R.id.english:
-            {
-                Intent intent = new Intent(MainActivity.this, english.class);
-                startActivity(intent);
-                break;
-            }
+                case R.id.jatiyo:
+                {
+                    Intent intent = new Intent(MainActivity.this, jatiyo.class);
+                    startActivity(intent);
+                    break;
+                }
 
-            case R.id.international:
-            {
-                Intent intent = new Intent(MainActivity.this, international.class);
-                startActivity(intent);
-                break;
-            }
+                case R.id.english:
+                {
+                    Intent intent = new Intent(MainActivity.this, english.class);
+                    startActivity(intent);
+                    break;
+                }
 
-            case R.id.khela:
-            {
-                Intent intent = new Intent(MainActivity.this, khela.class);
-                startActivity(intent);
-                break;
-            }
+                case R.id.international:
+                {
+                    Intent intent = new Intent(MainActivity.this, international.class);
+                    startActivity(intent);
+                    break;
+                }
 
-            case R.id.chakri:
-            {
-                Intent intent = new Intent(MainActivity.this, chakri.class);
-                startActivity(intent);
-                break;
-            }
+                case R.id.khela:
+                {
+                    Intent intent = new Intent(MainActivity.this, khela.class);
+                    startActivity(intent);
+                    break;
+                }
 
-            case R.id.sikkha:
-            {
-                Intent intent = new Intent(MainActivity.this, sikkha.class);
-                startActivity(intent);
-                break;
-            }
-            case R.id.binodon:
-            {
-                Intent intent = new Intent(MainActivity.this, binodon.class);
-                startActivity(intent);
-                break;
-            }
+                case R.id.chakri:
+                {
+                    Intent intent = new Intent(MainActivity.this, chakri.class);
+                    startActivity(intent);
+                    break;
+                }
 
-            case R.id.liveTv:
-            {
-                Intent intent = new Intent(MainActivity.this, livetv.class);
-                startActivity(intent);
-                break;
-            }
-            case R.id.liveRadio:
-            {
-                Intent intent = new Intent(MainActivity.this, liveradio.class);
-                startActivity(intent);
-                break;
-            }
-            case R.id.islamic:
-            {
-                Intent intent = new Intent(MainActivity.this, islamic.class);
-                startActivity(intent);
-                break;
+                case R.id.sikkha:
+                {
+                    Intent intent = new Intent(MainActivity.this, sikkha.class);
+                    startActivity(intent);
+                    break;
+                }
+                case R.id.binodon:
+                {
+                    Intent intent = new Intent(MainActivity.this, binodon.class);
+                    startActivity(intent);
+                    break;
+                }
+
+                case R.id.liveTv:
+                {
+                    Intent intent = new Intent(MainActivity.this, livetv.class);
+                    startActivity(intent);
+                    break;
+                }
+                case R.id.liveRadio:
+                {
+                    Intent intent = new Intent(MainActivity.this, liveradio.class);
+                    startActivity(intent);
+                    break;
+                }
+                case R.id.islamic:
+                {
+                    Intent intent = new Intent(MainActivity.this, islamic.class);
+                    startActivity(intent);
+                    break;
+                }
             }
         }
+
+    }
+
+    public boolean isInternetAvailable() {
+        ConnectivityManager cm =
+                (ConnectivityManager)getApplicationContext().getSystemService(getApplicationContext().CONNECTIVITY_SERVICE);
+
+        NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
+
+        boolean isConnected = activeNetwork != null && activeNetwork.isConnectedOrConnecting();
+
+        return isConnected;
     }
 
     @Override
@@ -163,4 +191,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         return super.onCreateOptionsMenu(menu);
     }
+
 }

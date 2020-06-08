@@ -47,12 +47,6 @@ public class commonweb extends AppCompatActivity {
         mAdView = findViewById(R.id.adView);
         w = findViewById(R.id.webviewid);
 
-        MobileAds.initialize(this, new OnInitializationCompleteListener() {
-            @Override
-            public void onInitializationComplete(InitializationStatus initializationStatus) {
-            }
-        });
-
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
 

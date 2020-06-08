@@ -93,6 +93,7 @@ public class zillavittik extends AppCompatActivity {
 
         else
         {
+
             int screenSize = getResources().getConfiguration().screenLayout & Configuration.SCREENLAYOUT_SIZE_MASK;
 
             switch(screenSize)

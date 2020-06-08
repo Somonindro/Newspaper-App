@@ -1,12 +1,17 @@
 package com.example.recyclerview;
 
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.util.Pair;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
@@ -17,6 +22,7 @@ public class zillaVittikRecyclerAdapter extends RecyclerView.Adapter<zillaVittik
     private List<Pair<String, Integer>> ab;
     private List<Pair<String, Integer>> clone = new ArrayList<>();
     private String[] districtnames;
+    private Context context;
 
     public zillaVittikRecyclerAdapter(List<Pair<String, Integer>> ab, String[] districtnames) {
         this.ab = ab;
@@ -36,6 +42,7 @@ public class zillaVittikRecyclerAdapter extends RecyclerView.Adapter<zillaVittik
         ImageView imageView = holder.imageView;
         ImageView demos = imageView.findViewById(R.id.zillaImageView);
         demos.setImageResource(ab.get(position).second);
+        context = holder.itemView.getContext();
 
         demos.setAnimation(AnimationUtils.loadAnimation(holder.itemView.getContext(), R.anim.left_to_right));
 
@@ -55,9 +62,19 @@ public class zillaVittikRecyclerAdapter extends RecyclerView.Adapter<zillaVittik
                     }
                 }
 
-                Intent intent1=new Intent(holder.itemView.getContext(), zillanewspaper.class);
-                intent1.putExtra("key",x);
-                holder.itemView.getContext().startActivity(intent1);
+                if(!isInternetAvailable())
+                {
+                    Toast.makeText(context, "Please check your internet connection", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                else
+                {
+                    Intent intent1=new Intent(context, zillanewspaper.class);
+                    intent1.putExtra("key",x);
+                    context.startActivity(intent1);
+                }
+
             }
         });
     }
@@ -73,6 +90,17 @@ public class zillaVittikRecyclerAdapter extends RecyclerView.Adapter<zillaVittik
             super(itemView);
             imageView = itemView;
         }
+    }
+
+    public boolean isInternetAvailable() {
+        ConnectivityManager cm =
+                (ConnectivityManager)context.getSystemService(context.CONNECTIVITY_SERVICE);
+
+        NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
+
+        boolean isConnected = activeNetwork != null && activeNetwork.isConnectedOrConnecting();
+
+        return isConnected;
     }
 
 
