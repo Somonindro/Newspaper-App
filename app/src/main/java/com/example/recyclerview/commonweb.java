@@ -25,7 +25,7 @@ public class commonweb extends AppCompatActivity {
     private String[] newspaper;
     private AdblockWebView w;
     private ProgressBar progressBar;
-    AdView mAdView;
+    private AdView mAdView;
 
 
     @Override

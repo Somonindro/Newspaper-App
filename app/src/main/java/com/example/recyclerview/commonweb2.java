@@ -30,7 +30,7 @@ public class commonweb2 extends AppCompatActivity {
     private String[] newspaper = new String[20];
     private WebView w;
     private ProgressBar progressBar;
-    AdView mAdView;
+    private AdView mAdView;
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference myRef = database.getReference("links");
     private int i=0;

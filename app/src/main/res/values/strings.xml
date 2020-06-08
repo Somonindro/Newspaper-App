@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">RecyclerView</string>
+    <string name="app_name">All Newspaper With Built in Adblocker</string>
     <string-array name="district">
         <item>Barishal</item>
         <item>Bhola</item>
