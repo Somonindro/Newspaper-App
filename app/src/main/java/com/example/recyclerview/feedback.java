@@ -3,6 +3,7 @@ package com.example.recyclerview;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -47,6 +48,9 @@ public class feedback extends AppCompatActivity {
                     DatabaseReference myRef = database.getReference("comments");
 
                     myRef.setValue(editText.getText().toString());
+                    editText.setText(null);
+                    Toast.makeText(feedback.this, "Thanks for your feedback", Toast.LENGTH_SHORT).show();
+                    finish();
                 }
             }
         });
