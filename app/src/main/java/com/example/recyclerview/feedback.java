@@ -21,8 +21,11 @@ import com.google.firebase.database.FirebaseDatabase;
 public class feedback extends AppCompatActivity {
 
     private String feedbacks;
+    private String email;
     private EditText editText;
     private Button button;
+    private EditText emailFeedback;
+    String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,24 +36,40 @@ public class feedback extends AppCompatActivity {
 
         editText = findViewById(R.id.edittext);
         button = findViewById(R.id.submit);
+        emailFeedback = findViewById(R.id.emailFeedback);
+
         button.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
 
                 feedbacks = editText.getText().toString();
+                email = emailFeedback.getText().toString();
+
+                if(email.isEmpty())
+                {
+                    emailFeedback.setError("Please enter your email address");
+                    emailFeedback.requestFocus();
+                    return;
+                }
+
+                if(!email.trim().matches(emailPattern))
+                {
+                    emailFeedback.setError("Please enter a valid email address");
+                    emailFeedback.requestFocus();
+                    return;
+                }
 
                 if(feedbacks.isEmpty())
                 {
-                    editText.setError("Please enter your comment");
+                    editText.setError("Please enter your feedback");
                     editText.requestFocus();
                     return;
                 }
 
-                else if(!isInternetAvailable())
+                if(!isInternetAvailable())
                 {
                     Toast.makeText(getApplicationContext(), "Please check your internet connection", Toast.LENGTH_SHORT).show();
-                    return;
                 }
 
                 else
@@ -61,7 +80,7 @@ public class feedback extends AppCompatActivity {
 
                     String key =  database.push().getKey();
 
-                    database.child(key).setValue(editText.getText().toString()).addOnCompleteListener(new OnCompleteListener<Void>() {
+                    database.child(key).setValue(email+"\n\n\n"+feedbacks).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
                             if(task.isSuccessful())

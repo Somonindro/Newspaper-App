@@ -32,11 +32,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         MobileAds.initialize(this, "ca-app-pub-7076860777204313~2986517262");
 
-        viewSettings();
-
-    }
-
-    private void viewSettings() {
         zillaVittik=(ImageView)findViewById(R.id.zilaVittik);
         jatiyo=(ImageView)findViewById(R.id.jatiyo);
         english=(ImageView)findViewById(R.id.english);
@@ -60,8 +55,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         liveTv.setOnClickListener(this);
         liveRadio.setOnClickListener(this);
         islamicRadio.setOnClickListener(this);
-    }
 
+    }
 
     @Override
     public void onClick(View v) {
