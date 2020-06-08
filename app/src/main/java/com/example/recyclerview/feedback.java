@@ -7,16 +7,20 @@ import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
+import android.util.Patterns;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.regex.Pattern;
 
 public class feedback extends AppCompatActivity {
 
@@ -25,7 +29,7 @@ public class feedback extends AppCompatActivity {
     private EditText editText;
     private Button button;
     private EditText emailFeedback;
-    String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+    private ProgressBar progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +41,7 @@ public class feedback extends AppCompatActivity {
         editText = findViewById(R.id.edittext);
         button = findViewById(R.id.submit);
         emailFeedback = findViewById(R.id.emailFeedback);
+        progressBar = findViewById(R.id.progressfeed);
 
         button.setOnClickListener(new View.OnClickListener() {
 
@@ -53,7 +58,7 @@ public class feedback extends AppCompatActivity {
                     return;
                 }
 
-                if(!email.trim().matches(emailPattern))
+                if(!Patterns.EMAIL_ADDRESS.matcher(email).matches())
                 {
                     emailFeedback.setError("Please enter a valid email address");
                     emailFeedback.requestFocus();
@@ -75,6 +80,7 @@ public class feedback extends AppCompatActivity {
                 else
                 {
                     button.setEnabled(false);
+                    progressBar.setVisibility(View.VISIBLE);
 
                     DatabaseReference database = FirebaseDatabase.getInstance().getReference("comments");
 
@@ -86,6 +92,7 @@ public class feedback extends AppCompatActivity {
                             if(task.isSuccessful())
                             {
                                 editText.setText(null);
+                                progressBar.setVisibility(View.GONE);
                                 Toast.makeText(feedback.this, "Thanks for your feedback", Toast.LENGTH_SHORT).show();
                                 finish();
                             }
