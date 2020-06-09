@@ -1,4 +1,4 @@
-package com.example.recyclerview;
+package com.newspaper.recyclerview;
 
 import android.content.Context;
 

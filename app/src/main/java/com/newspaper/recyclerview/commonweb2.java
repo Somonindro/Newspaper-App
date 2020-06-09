@@ -1,9 +1,10 @@
-package com.example.recyclerview;
+package com.newspaper.recyclerview;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -12,18 +13,11 @@ import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.MobileAds;
-import com.google.android.gms.ads.initialization.InitializationStatus;
-import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-
-import org.adblockplus.libadblockplus.android.webview.AdblockWebView;
-
-import java.util.List;
 
 public class commonweb2 extends AppCompatActivity {
 
@@ -58,6 +52,9 @@ public class commonweb2 extends AppCompatActivity {
 
         WebSettings webSettings = w.getSettings();
         webSettings.setJavaScriptEnabled(true);
+
+        w.setLayerType(View.LAYER_TYPE_HARDWARE, null);
+
         w.setWebViewClient(new WebViewClient());
 
         populating(x, y);

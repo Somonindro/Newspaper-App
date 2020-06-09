@@ -1,18 +1,15 @@
-package com.example.recyclerview;
+package com.newspaper.recyclerview;
 
-import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class khela extends AppCompatActivity {
+public class sikkha extends AppCompatActivity {
 
     private Myadapter myadapter;
     private RecyclerView recyclerView;
@@ -24,21 +21,22 @@ public class khela extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_international);
 
-        setTitle("Sports");
+        setTitle("Education");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
-        flag=new int[]{R.drawable.prothomalo,R.drawable.bdprotidin,R.drawable.jatiyo21,R.drawable.kalerkontho,R.drawable.noyadigonto,
-                R.drawable.amarsongbad,R.drawable.protidinersongbad,R.drawable.jugantor,R.drawable.songgram,R.drawable.manobjomin,
-                R.drawable.amadersomoy,R.drawable.somokal,R.drawable.manobkontho};
-        papernames = getResources().getStringArray(R.array.Khela1);
+        flag=new int[]{R.drawable.prothomalo,R.drawable.bdprotidin,R.drawable.jatiyo21,R.drawable.amarsongbad,R.drawable.protidinersongbad,
+                R.drawable.jugantor,R.drawable.songgram,R.drawable.manobjomin,R.drawable.edu1,R.drawable.edu2,R.drawable.edu3,R.drawable.edu4,R.drawable.edu5,
+                R.drawable.edu6,R.drawable.edu7,R.drawable.edu8,R.drawable.edu9,R.drawable.edu10};
+        papernames = getResources().getStringArray(R.array.Educationalsite1);
 
 
         recyclerView=(RecyclerView)findViewById(R.id.zillaWiseRecyclerView);
 
-        myadapter=new Myadapter(this, flag, papernames, 62);
+        myadapter=new Myadapter(this, flag, papernames, 64);
         recyclerView.setAdapter(myadapter);
         GridLayoutManager layoutManager;
+
         int orientation = this.getResources().getConfiguration().orientation;
 
         if(orientation == Configuration.ORIENTATION_PORTRAIT)

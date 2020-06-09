@@ -1,4 +1,4 @@
-package com.example.recyclerview;
+package com.newspaper.recyclerview;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,9 +13,6 @@ import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.MobileAds;
-import com.google.android.gms.ads.initialization.InitializationStatus;
-import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 
 import org.adblockplus.libadblockplus.android.webview.AdblockWebView;
 
@@ -49,6 +46,8 @@ public class commonweb extends AppCompatActivity {
 
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
+
+        w.setLayerType(View.LAYER_TYPE_HARDWARE, null);
 
         w.setWebChromeClient(new MyChrome());
         w.setWebViewClient(new MyClient());

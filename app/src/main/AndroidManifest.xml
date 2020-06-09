@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.recyclerview">
+    package="com.newspaper.recyclerview">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -16,33 +16,33 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
 
-        <activity android:name=".feedback"
+        <activity android:name="com.newspaper.recyclerview.feedback"
             android:screenOrientation="portrait"/>
 
         <activity
-            android:name=".commonweb2"
+            android:name="com.newspaper.recyclerview.commonweb2"
             android:configChanges="screenSize|orientation" />
-        <activity android:name=".islamic" />
-        <activity android:name=".liveradio" />
-        <activity android:name=".livetv" />
-        <activity android:name=".binodon" />
-        <activity android:name=".sikkha" />
-        <activity android:name=".chakri" />
-        <activity android:name=".khela" />
-        <activity android:name=".international" />
-        <activity android:name=".english" />
-        <activity android:name=".jatiyo" /> <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+        <activity android:name="com.newspaper.recyclerview.islamic" />
+        <activity android:name="com.newspaper.recyclerview.liveradio" />
+        <activity android:name="com.newspaper.recyclerview.livetv" />
+        <activity android:name="com.newspaper.recyclerview.binodon" />
+        <activity android:name="com.newspaper.recyclerview.sikkha" />
+        <activity android:name="com.newspaper.recyclerview.chakri" />
+        <activity android:name="com.newspaper.recyclerview.khela" />
+        <activity android:name="com.newspaper.recyclerview.international" />
+        <activity android:name="com.newspaper.recyclerview.english" />
+        <activity android:name="com.newspaper.recyclerview.jatiyo" /> <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-7076860777204313~2986517262"/>
 
-        <activity android:name=".zillanewspaper" />
+        <activity android:name="com.newspaper.recyclerview.zillanewspaper" />
         <activity
-            android:name=".commonweb"
+            android:name="com.newspaper.recyclerview.commonweb"
             android:configChanges="orientation|screenSize" />
-        <activity android:name=".zillavittik" />
-        <activity android:name=".MainActivity">
+        <activity android:name="com.newspaper.recyclerview.zillavittik" />
+        <activity android:name="com.newspaper.recyclerview.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

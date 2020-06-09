@@ -1,44 +1,37 @@
-package com.example.recyclerview;
-
-import android.content.Intent;
-import android.content.res.Configuration;
-import android.os.Bundle;
-import android.view.MenuItem;
-import android.view.View;
+package com.newspaper.recyclerview;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class jatiyo extends AppCompatActivity {
+import android.content.res.Configuration;
+import android.os.Bundle;
+import android.view.MenuItem;
 
+public class liveradio extends AppCompatActivity {
+
+    private int[] flag;
+    private String[] radio;
     private Myadapter myadapter;
     private RecyclerView recyclerView;
-    int[] flag;
-    private String[] papernames;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_international);
+        setContentView(R.layout.activity_liveradio);
 
-        setTitle("National Newspapers");
+        setTitle("Live Radio Streaming");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        flag = new int[]{R.drawable.radio1, R.drawable.radio2, R.drawable.radio3, R.drawable.radio4,
+                R.drawable.radio5, R.drawable.radio6, R.drawable.radio7 };
 
-        flag=new int[]{R.drawable.jatiyo25,R.drawable.jatiyo24,R.drawable.jatiyo23,R.drawable.jatiyo22,R.drawable.jatiyo21,
-                R.drawable.jatiyo20,R.drawable.jatiyo19,R.drawable.jatiyo18,R.drawable.jatiyo17,R.drawable.jatiyo16,
-                R.drawable.jatiyo15,R.drawable.jatiyo14,R.drawable.jatiyo13,R.drawable.jatiyo12,R.drawable.jatiyo11,
-                R.drawable.jatiyo10,R.drawable.jatiyo9,R.drawable.jatiyo8,R.drawable.jatiyo7,R.drawable.jatiyo6,
-                R.drawable.jatiyo5,R.drawable.jatiyo4,R.drawable.jatiyo3,R.drawable.jatiyo2,R.drawable.jatiyo1};
-        papernames = getResources().getStringArray(R.array.Jatiyo1);
+        radio = getResources().getStringArray(R.array.radio1);
 
+        recyclerView = (RecyclerView)findViewById(R.id.zillaWiseRecyclerView);
 
-        recyclerView=(RecyclerView)findViewById(R.id.zillaWiseRecyclerView);
-
-        myadapter=new Myadapter(this, flag, papernames, 70);
+        myadapter=new Myadapter(this, flag, radio, 67);
         recyclerView.setAdapter(myadapter);
         GridLayoutManager layoutManager;
 
@@ -102,7 +95,9 @@ public class jatiyo extends AppCompatActivity {
 
         }
 
+
         recyclerView.setLayoutManager(layoutManager);
+
     }
 
     @Override
@@ -117,5 +112,9 @@ public class jatiyo extends AppCompatActivity {
         }
     }
 
-
+    @Override
+    public void onBackPressed() {
+        this.finish();
+        super.onBackPressed();
+    }
 }

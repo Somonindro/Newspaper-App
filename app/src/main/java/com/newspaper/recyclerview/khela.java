@@ -1,42 +1,41 @@
-package com.example.recyclerview;
+package com.newspaper.recyclerview;
+
+import android.content.res.Configuration;
+import android.os.Bundle;
+import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.res.Configuration;
-import android.os.Bundle;
-import android.view.MenuItem;
+public class khela extends AppCompatActivity {
 
-public class livetv extends AppCompatActivity {
-
-    private int[] flag;
-    private String[] tvnames;
     private Myadapter myadapter;
     private RecyclerView recyclerView;
+    int[] flag;
+    private String[] papernames;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_livetv);
+        setContentView(R.layout.activity_international);
 
-        setTitle("Live Tv Streaming");
+        setTitle("Sports");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        flag = new int[] {R.drawable.tv1, R.drawable.tv2, R.drawable.tv3, R.drawable.tv4,
-                R.drawable.tv5, R.drawable.tv6, R.drawable.tv7, R.drawable.tv8,
-                R.drawable.tv9, R.drawable.tv10, R.drawable.tv11, R.drawable.tv12,
-                R.drawable.tv13, R.drawable.tv14 };
 
-        tvnames = getResources().getStringArray(R.array.tvchannel1);
+        flag=new int[]{R.drawable.prothomalo,R.drawable.bdprotidin,R.drawable.jatiyo21,R.drawable.kalerkontho,R.drawable.noyadigonto,
+                R.drawable.amarsongbad,R.drawable.protidinersongbad,R.drawable.jugantor,R.drawable.songgram,R.drawable.manobjomin,
+                R.drawable.amadersomoy,R.drawable.somokal,R.drawable.manobkontho};
+        papernames = getResources().getStringArray(R.array.Khela1);
 
-        recyclerView = (RecyclerView)findViewById(R.id.zillaWiseRecyclerView);
 
-        myadapter=new Myadapter(this, flag, tvnames, 66);
+        recyclerView=(RecyclerView)findViewById(R.id.zillaWiseRecyclerView);
+
+        myadapter=new Myadapter(this, flag, papernames, 62);
         recyclerView.setAdapter(myadapter);
         GridLayoutManager layoutManager;
-
         int orientation = this.getResources().getConfiguration().orientation;
 
         if(orientation == Configuration.ORIENTATION_PORTRAIT)
@@ -97,9 +96,7 @@ public class livetv extends AppCompatActivity {
 
         }
 
-
         recyclerView.setLayoutManager(layoutManager);
-
     }
 
     @Override
@@ -113,5 +110,6 @@ public class livetv extends AppCompatActivity {
                 return false;
         }
     }
+
 
 }

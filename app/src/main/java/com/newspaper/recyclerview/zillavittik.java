@@ -1,16 +1,12 @@
-package com.example.recyclerview;
+package com.newspaper.recyclerview;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.os.Bundle;
-import android.util.DisplayMetrics;
-import android.util.LayoutDirection;
 import android.util.Pair;
 import android.view.Menu;
 import android.view.MenuItem;

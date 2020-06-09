@@ -1,43 +1,39 @@
-package com.example.recyclerview;
-
-import android.content.Intent;
-import android.content.res.Configuration;
-import android.os.Bundle;
-import android.view.MenuItem;
-import android.view.View;
+package com.newspaper.recyclerview;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class international extends AppCompatActivity {
+import android.content.res.Configuration;
+import android.os.Bundle;
+import android.view.MenuItem;
 
+public class livetv extends AppCompatActivity {
+
+    private int[] flag;
+    private String[] tvnames;
     private Myadapter myadapter;
     private RecyclerView recyclerView;
-    int[] flag;
-    private String[] papernames;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_international);
+        setContentView(R.layout.activity_livetv);
 
-        setTitle("International Newspapers");
+        setTitle("Live Tv Streaming");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        flag = new int[] {R.drawable.tv1, R.drawable.tv2, R.drawable.tv3, R.drawable.tv4,
+                R.drawable.tv5, R.drawable.tv6, R.drawable.tv7, R.drawable.tv8,
+                R.drawable.tv9, R.drawable.tv10, R.drawable.tv11, R.drawable.tv12,
+                R.drawable.tv13, R.drawable.tv14 };
 
-        flag=new int[]{R.drawable.international1,R.drawable.international2,R.drawable.international3,R.drawable.international4,R.drawable.international5,
-                R.drawable.international6,R.drawable.international7,R.drawable.international8,R.drawable.international9,R.drawable.international10,
-                R.drawable.international11,R.drawable.international12,R.drawable.international13,R.drawable.international14,R.drawable.international15,
-                R.drawable.international16,R.drawable.international17,R.drawable.international18,R.drawable.international19,R.drawable.international20,R.drawable.international21};
-        papernames = getResources().getStringArray(R.array.Internationalsite1);
+        tvnames = getResources().getStringArray(R.array.tvchannel1);
 
+        recyclerView = (RecyclerView)findViewById(R.id.zillaWiseRecyclerView);
 
-        recyclerView=(RecyclerView)findViewById(R.id.zillaWiseRecyclerView);
-
-        myadapter=new Myadapter(this, flag, papernames, 61);
+        myadapter=new Myadapter(this, flag, tvnames, 66);
         recyclerView.setAdapter(myadapter);
         GridLayoutManager layoutManager;
 
@@ -103,6 +99,7 @@ public class international extends AppCompatActivity {
 
 
         recyclerView.setLayoutManager(layoutManager);
+
     }
 
     @Override
@@ -116,6 +113,5 @@ public class international extends AppCompatActivity {
                 return false;
         }
     }
-
 
 }

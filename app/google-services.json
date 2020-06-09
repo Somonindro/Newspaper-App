@@ -8,9 +8,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:559343506836:android:a0df44c3d4a289351eab81",
+        "mobilesdk_app_id": "1:559343506836:android:dc97e21dcb81ed3a1eab81",
         "android_client_info": {
-          "package_name": "com.example.realtimedatabase"
+          "package_name": "com.example.recyclerview"
         }
       },
       "oauth_client": [
@@ -37,9 +37,38 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:559343506836:android:dc97e21dcb81ed3a1eab81",
+        "mobilesdk_app_id": "1:559343506836:android:05dc9776387700c41eab81",
         "android_client_info": {
-          "package_name": "com.example.recyclerview"
+          "package_name": "com.newspaper.recyclerview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "559343506836-kb58ivud3kp836hktsqd44tfs0nloaqv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqjD4TJUSJS2UYxFUV01z148prIhLqqnU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "559343506836-kb58ivud3kp836hktsqd44tfs0nloaqv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:559343506836:android:6df8f1a2d8819eeb1eab81",
+        "android_client_info": {
+          "package_name": "com.rahi.linkpusher"
         }
       },
       "oauth_client": [

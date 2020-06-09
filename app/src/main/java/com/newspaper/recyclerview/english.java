@@ -1,40 +1,42 @@
-package com.example.recyclerview;
+package com.newspaper.recyclerview;
+
+import android.content.res.Configuration;
+import android.os.Bundle;
+import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.res.Configuration;
-import android.os.Bundle;
-import android.view.MenuItem;
+public class english extends AppCompatActivity {
 
-public class liveradio extends AppCompatActivity {
-
-    private int[] flag;
-    private String[] radio;
     private Myadapter myadapter;
     private RecyclerView recyclerView;
+    int[] flag;
+    private String[] papernames;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_liveradio);
+        setContentView(R.layout.activity_english);
 
-        setTitle("Live Radio Streaming");
+        setTitle("English Newspapers");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        flag = new int[]{R.drawable.radio1, R.drawable.radio2, R.drawable.radio3, R.drawable.radio4,
-                R.drawable.radio5, R.drawable.radio6, R.drawable.radio7 };
 
-        radio = getResources().getStringArray(R.array.radio1);
+        flag=new int[]{R.drawable.eng1,R.drawable.eng2,R.drawable.eng3,R.drawable.eng4,R.drawable.eng5,R.drawable.eng6,R.drawable.eng7,
+                R.drawable.eng8,R.drawable.eng9,R.drawable.eng10,R.drawable.eng11,R.drawable.eng12,R.drawable.eng13,R.drawable.eng14,
+                R.drawable.eng15,R.drawable.eng16,R.drawable.eng17,R.drawable.eng18,R.drawable.eng19,R.drawable.eng20,R.drawable.eng21};
 
-        recyclerView = (RecyclerView)findViewById(R.id.zillaWiseRecyclerView);
+        papernames = getResources().getStringArray(R.array.Englishnewspaper1);
 
-        myadapter=new Myadapter(this, flag, radio, 67);
+
+        recyclerView=(RecyclerView)findViewById(R.id.zillaWiseRecyclerView);
+
+        myadapter=new Myadapter(this, flag, papernames, 60);
         recyclerView.setAdapter(myadapter);
         GridLayoutManager layoutManager;
-
         int orientation = this.getResources().getConfiguration().orientation;
 
         if(orientation == Configuration.ORIENTATION_PORTRAIT)
@@ -95,11 +97,9 @@ public class liveradio extends AppCompatActivity {
 
         }
 
-
         recyclerView.setLayoutManager(layoutManager);
 
     }
-
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId())
@@ -112,9 +112,4 @@ public class liveradio extends AppCompatActivity {
         }
     }
 
-    @Override
-    public void onBackPressed() {
-        this.finish();
-        super.onBackPressed();
-    }
 }

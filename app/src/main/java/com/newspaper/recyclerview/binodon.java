@@ -1,39 +1,41 @@
-package com.example.recyclerview;
+package com.newspaper.recyclerview;
+
+import android.content.res.Configuration;
+import android.os.Bundle;
+import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.res.Configuration;
-import android.os.Bundle;
-import android.view.MenuItem;
+public class binodon extends AppCompatActivity {
 
-public class islamic extends AppCompatActivity {
-
-    private int[] flag;
-    private String[] radio;
     private Myadapter myadapter;
     private RecyclerView recyclerView;
+    int[] flag;
+    private String[] papernames;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_liveradio);
+        setContentView(R.layout.activity_international);
 
-        setTitle("Live Radio Streaming");
+        setTitle("Entertainment");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        flag = new int[]{R.drawable.islamicradio};
 
-        radio = getResources().getStringArray(R.array.islamicradio1);
+        flag=new int[]{R.drawable.prothomalo,R.drawable.bdprotidin,R.drawable.jatiyo21,R.drawable.kalerkontho,R.drawable.noyadigonto,
+                R.drawable.amarsongbad,R.drawable.protidinersongbad,R.drawable.jugantor,R.drawable.manobjomin,
+                R.drawable.amadersomoy,R.drawable.somokal,R.drawable.manobkontho};
+        papernames = getResources().getStringArray(R.array.Binodon1);
 
-        recyclerView = recyclerView=(RecyclerView)findViewById(R.id.zillaWiseRecyclerView);
 
-        myadapter=new Myadapter(this, flag, radio, 68);
+        recyclerView=(RecyclerView)findViewById(R.id.zillaWiseRecyclerView);
+
+        myadapter=new Myadapter(this, flag, papernames, 65);
         recyclerView.setAdapter(myadapter);
         GridLayoutManager layoutManager;
-
         int orientation = this.getResources().getConfiguration().orientation;
 
         if(orientation == Configuration.ORIENTATION_PORTRAIT)
@@ -94,9 +96,7 @@ public class islamic extends AppCompatActivity {
 
         }
 
-
         recyclerView.setLayoutManager(layoutManager);
-
     }
 
     @Override
@@ -111,9 +111,5 @@ public class islamic extends AppCompatActivity {
         }
     }
 
-    @Override
-    public void onBackPressed() {
-        this.finish();
-        super.onBackPressed();
-    }
+
 }

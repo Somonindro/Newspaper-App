@@ -1,20 +1,15 @@
-package com.example.recyclerview;
+package com.newspaper.recyclerview;
 
-import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.SearchView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class english extends AppCompatActivity {
+public class jatiyo extends AppCompatActivity {
 
     private Myadapter myadapter;
     private RecyclerView recyclerView;
@@ -24,24 +19,26 @@ public class english extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_english);
+        setContentView(R.layout.activity_international);
 
-        setTitle("English Newspapers");
+        setTitle("National Newspapers");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
-        flag=new int[]{R.drawable.eng1,R.drawable.eng2,R.drawable.eng3,R.drawable.eng4,R.drawable.eng5,R.drawable.eng6,R.drawable.eng7,
-                R.drawable.eng8,R.drawable.eng9,R.drawable.eng10,R.drawable.eng11,R.drawable.eng12,R.drawable.eng13,R.drawable.eng14,
-                R.drawable.eng15,R.drawable.eng16,R.drawable.eng17,R.drawable.eng18,R.drawable.eng19,R.drawable.eng20,R.drawable.eng21};
-
-        papernames = getResources().getStringArray(R.array.Englishnewspaper1);
+        flag=new int[]{R.drawable.jatiyo25,R.drawable.jatiyo24,R.drawable.jatiyo23,R.drawable.jatiyo22,R.drawable.jatiyo21,
+                R.drawable.jatiyo20,R.drawable.jatiyo19,R.drawable.jatiyo18,R.drawable.jatiyo17,R.drawable.jatiyo16,
+                R.drawable.jatiyo15,R.drawable.jatiyo14,R.drawable.jatiyo13,R.drawable.jatiyo12,R.drawable.jatiyo11,
+                R.drawable.jatiyo10,R.drawable.jatiyo9,R.drawable.jatiyo8,R.drawable.jatiyo7,R.drawable.jatiyo6,
+                R.drawable.jatiyo5,R.drawable.jatiyo4,R.drawable.jatiyo3,R.drawable.jatiyo2,R.drawable.jatiyo1};
+        papernames = getResources().getStringArray(R.array.Jatiyo1);
 
 
         recyclerView=(RecyclerView)findViewById(R.id.zillaWiseRecyclerView);
 
-        myadapter=new Myadapter(this, flag, papernames, 60);
+        myadapter=new Myadapter(this, flag, papernames, 70);
         recyclerView.setAdapter(myadapter);
         GridLayoutManager layoutManager;
+
         int orientation = this.getResources().getConfiguration().orientation;
 
         if(orientation == Configuration.ORIENTATION_PORTRAIT)
@@ -103,8 +100,8 @@ public class english extends AppCompatActivity {
         }
 
         recyclerView.setLayoutManager(layoutManager);
-
     }
+
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId())
@@ -116,5 +113,6 @@ public class english extends AppCompatActivity {
                 return false;
         }
     }
+
 
 }
