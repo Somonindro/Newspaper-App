@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: org.adblockplus:adblock-android:3.19@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ffcca432766c01d4e13279cafc896d98/jetified-adblock-android-3.19/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ffcca432766c01d4e13279cafc896d98/jetified-adblock-android-3.19/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.adblockplus/adblock-android/3.19/746b76e3ad98e6cb31dbda3d0424f7207ffc877f/adblock-android-3.19-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.adblockplus/adblock-android/3.19/8bf72eba1d835ebffff2c7b84b5bf0d5ecb977ab/adblock-android-3.19-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

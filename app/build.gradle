@@ -13,6 +13,7 @@ android {
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
+        ndk.abiFilters 'armeabi-v7a','arm64-v8a','x86','x86_64'
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -29,8 +30,8 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation fileTree(dir: "libs", include: ["*.jar"])
-    implementation 'org.adblockplus:adblock-android-webview:3.0'
-    implementation 'org.adblockplus:adblock-android:3.0'
+    implementation 'org.adblockplus:adblock-android-webview:3.19'
+    implementation 'org.adblockplus:adblock-android:3.19'
     implementation 'com.google.android.gms:play-services-ads:19.1.0'
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
